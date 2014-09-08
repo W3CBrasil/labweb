@@ -13,18 +13,32 @@
 
   .institutional {
     @include span-columns(5);
+    position: relative;
 
+    .footer-logo {
+      position: absolute;
+      top: 22px;
+      left: -23px;
+    }
 
     .social {
       li {
         @include span-columns(1 of 5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+
+        &:first-child {
+          @include shift(1);
+        }
       }
     }
 
     .area-links {
-      border-top: dashed 1px #CCC;
       clear: both;
-      margin: 30px 0;
+      float: right;
+      border-top: dashed 1px #CCC;
+      margin: 0;
     }
 
     .links {
@@ -35,9 +49,9 @@
 
       li {
         text-align: center;
-        width: 130px;
+        width: 145px;
         border-top: dashed 1px #CCC;
-        font-size: 20px;
+        font-size: 22px;
         color: #333;
 
         &:first-child {
@@ -47,7 +61,7 @@
         a {
           color: inherit;
           display: block;
-          margin: 5px 0;
+          margin: 10px 0;
 
           &:hover {
             color: #21A0D8;
@@ -72,6 +86,21 @@
     .logo-small {
       margin-top: 20px;
     }
+  }
 
+  .footer-info {
+    background: #005A96;
+    margin-top: 50px;
+    padding: 15px 50px;
+
+    .cardume,
+    p {
+      float: right;
+    }
+
+    p {
+      margin: 12px 20px;
+      color: #FFF;
+    }
   }
 }
