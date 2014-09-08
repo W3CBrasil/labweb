@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid #CCC;
+
+  .institutional {
+    @include span-columns(5);
+
+    .social {
+      li {
+        @include span-columns(1 of 5);
+      }
+    }
+
+    .area-links {
+      border-top: dashed 1px #CCC;
+      clear: both;
+      margin: 30px 0;
+    }
+
+    .links {
+      list-style: none;
+    }
+  }
+}
