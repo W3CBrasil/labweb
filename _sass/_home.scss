@@ -1,0 +1,142 @@
+.highlights {
+  background: url("/images/bg-highlight.png");
+  height: 546px;
+  margin-bottom: 50px;
+
+  .highlight-controls {
+    @include span-columns(1);
+    @include shift(3);
+    @include omega;
+    margin-top: 176px;
+  }
+
+  .highlight-icon {
+    width: 41px;
+    height: 94px;
+    margin-left: 20px;
+    background-color: #FFF;
+
+    img {
+      margin-top: 28px;
+      float: right;
+    }
+  }
+
+  .highlight-arrow {
+    width: 40px;
+    height: 50px;
+    margin: 1px 1px 0px 20px;
+    background-color: #FFF;
+
+    img {
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .highlight-title {
+    @include span-columns(8);
+    margin-top: 176px;
+    height: 94px;
+    background-color: #FFF;
+    @include pad;
+    color: #0094D5;
+    font-family: 'AdventProSemibold';
+    font-size: 40px;
+  }
+
+  .highlight-description {
+    @include span-columns(8);
+    margin-top: 1px;
+    height: 213px;
+    background-color: #FFF;
+    @include pad;
+    font-family: 'LatoLight';
+    font-size: 20px;
+    line-height: golden-ratio(1em, 1);
+
+    a {
+      color: #0092D3;
+    }
+  }
+}
+
+.home-projects {
+  header {
+    @include clearfix();
+    margin-bottom: 50px;
+
+    span {
+      font-family: 'AdventProLight';
+      font-size: 60px;
+      color: #A7A9AB;
+    }
+  }
+
+  .project-wrapper {
+    @include span-columns(6);
+    @include media($mobile) {
+      @include span-columns(4 of 4);
+      @include omega();
+    }
+    height: 284px;
+    border: 1px solid #FF6600;
+    position: relative;
+
+    .project-image {
+      @include span-columns(3 of 6);
+    }
+
+    .project-description {
+      @include span-columns(3 of 6);
+      @include pad(default default default 0px);
+      @include omega;
+      color: #323232;
+
+      span {
+        font-family: "AdventProRegular";
+        font-size: 26px;
+      }
+
+      p {
+        font-family: "LatoRegular";
+        font-size: 12px;
+        line-height: 16px;
+
+        a {
+          color: #0092D3;
+        }
+      }
+    }
+
+    .icons-wrapper {
+      @include fill-parent;
+      height: 62px;
+      border-top: 1px dotted #FF6600;
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+
+      .type-wrapper {
+        @include span-columns(3 of 6);
+        background: rgba(25, 93, 147, .6);
+        height: 61px;
+
+        img {
+          float: left;
+          margin-left: 20px;
+          margin-top: 12px;
+        }
+
+        span {
+          font-family: "AdventProSemibold";
+          color: #FFF;
+          font-size: 18px;
+          margin-left: 30px;
+          margin-top: 20px;
+          float: left;
+        }
+      }
+    }
+  }
+}
