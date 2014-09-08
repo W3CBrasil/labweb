@@ -58,8 +58,20 @@
   }
 
   .organization {
-    @include span-columns(3);
-    @include shift(4);
+    @include span-columns(2);
+    @include shift(5);
     text-align: center;
+
+    .logo-small {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 4.5px;
+    }
+
+    .logo,
+    .logo-small {
+      margin-top: 20px;
+    }
+
   }
 }
