@@ -1,0 +1,38 @@
+.content {
+  &.about {
+    @include span-columns(10);
+    @include shift(1);
+    margin-top: 100px;
+    border-bottom: dashed 1px #CCC;
+
+    .title,
+    .subtitle {
+      color: #ccc;
+    }
+
+    .title {
+      font-size: 46px;
+    }
+
+    .subtitle {
+      font-size: 30px;
+    }
+
+    .author {
+      font-family: 'AdventProSemibold';
+      font-size: 18px;
+      margin: 50px 0;
+      color: #21A0D8;
+      text-align: right;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-left: 20px;
+      float: right;
+    }
+  }
+}

@@ -11,6 +11,7 @@
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "shared/header";
 @import "base";
+@import "shared/header";
+@import "pages/about";
 @import "home";
