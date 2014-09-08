@@ -1,8 +1,18 @@
 .footer {
   border-top: 1px solid #CCC;
+  margin-top: 50px;
+  padding-top: 50px;
 
   .institutional {
     @include span-columns(5);
+
+    .title {
+      font-family: 'AdventProSemibold';
+      border-bottom: dashed 1px #CCC;
+      text-align: right;
+      margin-bottom: 5px;
+      padding-bottom: 5px;
+    }
 
     .social {
       li {
@@ -20,6 +30,29 @@
       display: inline-block;
       vertical-align: top;
       list-style: none;
+      margin: 0 5px;
+
+      li {
+        text-align: center;
+        width: 130px;
+        border-top: dashed 1px #CCC;
+        font-size: 20px;
+        color: #333;
+
+        &:first-child {
+          border: none;
+        }
+
+        a {
+          color: inherit;
+          display: block;
+          margin: 5px 0;
+
+          &:hover {
+            color: #21A0D8;
+          }
+        }
+      }
     }
   }
 }
