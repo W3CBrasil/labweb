@@ -19,19 +19,12 @@ $(function() {
   if ($(".infinite-spinner").length < 1)
     shouldFetchPosts = false;
 
-  // Are we close to the end of the page? If we are, load more posts
-  $(window).scroll(function(e){
+  $(".load_more").click(function(e) {
+    e.preventDefault()
+
     if (!shouldFetchPosts || isFetchingPosts) return;
 
-    var windowHeight = $(window).height(),
-        windowScrollPosition = $(window).scrollTop(),
-        bottomScrollPosition = windowHeight + windowScrollPosition,
-        documentHeight = $(document).height();
-
-    // If we've scrolled past the loadNewPostsThreshold, fetch posts
-    if ((documentHeight - loadNewPostsThreshold) < bottomScrollPosition) {
-      fetchPosts();
-    }
+    fetchPosts();
   });
 
   // Fetch a chunk of posts
