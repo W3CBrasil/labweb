@@ -3,16 +3,17 @@
   margin-top: 50px;
   padding-top: 50px;
 
+  .title {
+    font-family: 'AdventProSemibold';
+    border-bottom: dashed 1px #CCC;
+    text-align: right;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
   .institutional {
     @include span-columns(5);
 
-    .title {
-      font-family: 'AdventProSemibold';
-      border-bottom: dashed 1px #CCC;
-      text-align: right;
-      margin-bottom: 5px;
-      padding-bottom: 5px;
-    }
 
     .social {
       li {
@@ -54,5 +55,11 @@
         }
       }
     }
+  }
+
+  .organization {
+    @include span-columns(3);
+    @include shift(4);
+    text-align: center;
   }
 }
