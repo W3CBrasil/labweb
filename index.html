@@ -2,14 +2,47 @@
 layout: default
 ---
 
-<ul class="post-list">
-  {% for post in site.categories.projects %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<section class="highlights">
+  <div class="highlight-controls">
+    <div class="highlight-icon">
+      <img src="/images/type-icon.png">
+    </div>
+    <div class="highlight-arrow">
+      <img src="/images/arrow-left.png">
+    </div>
+    <div class="highlight-arrow">
+      <img src="/images/arrow-right.png">
+    </div>
+  </div>
+  <div class="highlight-title">
+    Título do Projeto
+  </div>
+  <div class="highlight-description">
+    Descrição do projeto Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore <a href="#">hyperlink</a> aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+  </div>
+</section>
 
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
-    </li>
-  {% endfor %}
-</ul>
+<section class="home-projects">
+  <header>
+    <span>Mais Projetos</span>
+  </header>
+
+  <div class="project-wrapper">
+    <div class="project-image">
+      <img src="/images/project-img-thumb.png">
+    </div>
+    <div class="project-description">
+      <span>Título do Projeto</span>
+      <p>
+        Descrição do projeto no thumbnail com mouse over consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore lorem ipsum sit dolor amet hyperlink aliquam erat volutpat. Ut wisi enim ad minim veniam, veniam, quis nostrud exerci tation aliquip ex ea commodo consequat.
+        <a href="#">[...]</a>
+      </p>
+    </div>
+    <div class="icons-wrapper">
+      <div class="type-wrapper">
+        <img src="/images/type-icon-white.png">
+        <span>experimento</span>
+      </div>
+    </div>
+  </div>
+</section>

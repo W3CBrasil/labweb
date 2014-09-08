@@ -5,7 +5,11 @@
 
 @import 'bourbon';
 @import 'neat-helpers';
+@import 'grid-settings';
 @import 'neat';
+@import 'fonts';
+
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "base";
+@import "home";

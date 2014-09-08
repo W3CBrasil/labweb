@@ -14,15 +14,27 @@
   </head>
 
   <body>
-    <nav>
-      <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-      {% for page in site.pages %}
-        {% if page.title %}
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        {% endif %}
-      {% endfor %}
-    </nav>
+    <header class="page-header">
+      <div class="wrapper">
+        <img src="/images/logo.png">
+        <ul>
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li>
+                <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </header>
 
-    {{ content }}
+    <section class="container">
+      {{ content }}
+    </section>
+
+    <footer>
+      rodapé
+    </footer>
   </body>
 </html>
