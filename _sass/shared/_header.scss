@@ -1,0 +1,37 @@
+.header {
+  height: 55px;
+  background-color: #FFF;
+  @include clearfix();
+
+  .logo {
+    position: absolute;
+    color: none;
+  }
+
+  .navigation {
+    @include span-columns(8);
+    float: right;
+
+    ul {
+      padding: 0;
+      margin-top: 20px;
+
+      li {
+        @include span-columns(2 of 8);
+        border-right: dotted 1px;
+        text-align: center;
+        font-family: 'LatoLight';
+        font-size: 16px;
+        margin-right: 0;
+
+        a {
+          color: #FF6600;
+        }
+      }
+
+      li:last-child {
+        border: none;
+      }
+    }
+  }
+}

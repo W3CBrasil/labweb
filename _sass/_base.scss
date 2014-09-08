@@ -17,43 +17,6 @@ a {
   text-decoration: none;
 }
 
-.page-header {
-  height: 55px;
-  background-color: #FFF;
-  @include clearfix();
-
-  .wrapper {
-    @include outer-container;
-
-    img {
-      position: absolute;
-      z-index: 999;
-    }
-
-    ul {
-      @include span-columns(8);
-      @include shift(4);
-      padding: 0;
-
-      li {
-        @include span-columns(2 of 8);
-        border-right: dotted 1px;
-        text-align: center;
-        font-family: 'LatoLight';
-        font-size: 16px;
-
-        a {
-          color: #FF6600;
-        }
-      }
-
-      li:last-child {
-        border: none;
-      }
-    }
-  }
-}
-
 .container {
   @include outer-container;
 }
