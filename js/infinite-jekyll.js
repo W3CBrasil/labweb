@@ -67,9 +67,13 @@ $(function() {
   function fetchPostWithIndex(index, callback) {
     var postURL = postURLs[index];
 
-    $.get(postURL, function(data) {
-      $(data).find(".post").appendTo(".posts");
-      callback();
+    $.ajax({
+      url: postURL,
+      dataType: 'html',
+      success: function(data) {
+        $(data).appendTo(".posts");
+        callback();
+      }
     });
   }
 
