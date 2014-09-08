@@ -4,4 +4,34 @@ title: projects
 permalink: /projects/
 ---
 
-projects
+<div class="posts">
+
+  {% for project in site.categories.projects limit: 1 %}
+
+    <div class="post">
+      <div class="project-image">
+        <img src="/images/project-img-thumb.png">
+      </div>
+
+      <div class="project-description">
+        <span>{{ project.title }}</span>
+        <p>
+          {{ project.content }}
+          <a href="#">[...]</a>
+        </p>
+      </div>
+
+      <div class="icons-wrapper">
+        <div class="type-wrapper">
+          <img src="/images/type-icon-white.png">
+          <span>experimento</span>
+        </div>
+
+      </div>
+    </div>
+
+  {% endfor %}
+
+</div>
+
+<div class="infinite-spinner"></div>
