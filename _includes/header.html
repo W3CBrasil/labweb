@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="container">
+    <a href="{{ site.url }}" class="link-logo">
+      <img src="/images/logo.png" class="logo">
+    </a>
+    <nav class="navigation">
+      <ul>
+        {% for page in site.pages %}
+          {% if page.title %}
+            <li>
+              <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        <li><a href="#">w3c brasil</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

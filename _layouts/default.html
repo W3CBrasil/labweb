@@ -1,84 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="/js/infinite-jekyll.js"></script>
-
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  </head>
+  {% include head.html %}
 
   <body>
-    <header class="header">
-      <div class="container">
-        <a href="{{ site.url }}" class="link-logo">
-          <img src="/images/logo.png" class="logo">
-        </a>
-        <nav class="navigation">
-          <ul>
-            {% for page in site.pages %}
-              {% if page.title %}
-                <li>
-                  <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-            <li><a href="#">w3c brasil</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+
+    {% include header.html %}
 
     <section class="container">
       {{ content }}
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="institutional">
-          <p class="title">institucional</p>
-          <img src="/images/logo-footer.png" class="footer-logo">
-          <ul class="social">
-            <li><a href="https://plus.google.com"><img src="/images/social-icons/social-google.png"></a></li>
-            <li><a href="https://twitter.com/"><img src="/images/social-icons/social-twitter.png"></a></li>
-            <li><a href="https://www.facebook.com/"><img src="/images/social-icons/social-facebook.png"></a></li>
-            <li><a href="mailto:contato@labweb.com"><img src="/images/social-icons/social-mail.png"></a></li>
-          </ul>
-          <div class="area-links">
-            <ul class="links">
-              <li><a href="/about">sobre</a></li>
-              <li><a href="/about">equipe</a></li>
-              <li><a href="/projects">projetos</a></li>
-              <li><a href="/about">contato</a></li>
-            </ul>
-            <ul class="links">
-              <li><a href="/contribute">colabore</a></li>
-              <li><a href="/about">dados</a></li>
-              <li><a href="/about">acessibilidade</a></li>
-              <li><a href="/about">open web</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="organization">
-          <p class="title">organização</p>
-            <a href="http://www.nic.br/"><img src="/images/organization/nicbr.png" class="logo-small"></a>
-            <a href="http://www.cgi.br/"><img src="/images/organization/cgibr.png" class="logo-small"></a>
-            <a href="http://www.w3c.br/"><img src="/images/organization/w3cbr.png" class="logo"></a>
-        </div>
-      </div>
-      <div class="footer-info">
-        <img src="/images/labweb-white.png">
-        <img src="/images/cardume.png" class="cardume">
-        <p>Design:</p>
-      </div>
-    </footer>
+    {% include footer.html %}
+
   </body>
 </html>

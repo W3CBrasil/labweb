@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <section class="highlights">
+      <div class="container">
+        <div class="highlight-controls">
+          <div class="highlight-icon">
+            <img src="/images/projects/experiment-blue.png">
+          </div>
+          <div class="highlight-arrow">
+            <img src="/images/arrow-left.png">
+          </div>
+          <div class="highlight-arrow">
+            <img src="/images/arrow-right.png">
+          </div>
+        </div>
+        <div class="highlight-title">
+          Título do Projeto
+        </div>
+        <div class="highlight-description">
+          Descrição do projeto Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore <a href="#">hyperlink</a> aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      {{ content }}
+    </section>
+
+    {% include footer.html %}
+  </body>
+</html>
