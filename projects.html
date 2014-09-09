@@ -4,36 +4,29 @@ title: projects
 permalink: /projects/
 ---
 
-<div class="posts">
+<div class="content projects" data-projects>
+
+  <h1 class="title">Projetos</h1>
 
   {% for project in site.categories.projects limit: 1 %}
-
-    <div class="post">
-      <div class="project-image">
-        <img src="/images/project-img-thumb.png">
-      </div>
-
-      <div class="project-description">
-        <span>{{ project.title }}</span>
-        <p>
-          {{ project.content }}
-          <a href="#">[...]</a>
-        </p>
-      </div>
-
-      <div class="icons-wrapper">
-        <div class="type-wrapper">
-          <img src="/images/type-icon-white.png">
-          <span>experimento</span>
+    <div class="posts">
+      <div class="project">
+        <img src="/images/project-img-thumb.png" class="project-image">
+        <div class="project-description">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }} <a href="#">[...]</a></p>
         </div>
+        <div class="project-info">
+          <img src="/images/projects/view.png">
+          <p>visualização</p>
+          <div class="project-icons">
 
+          </div>
+        </div>
       </div>
     </div>
-
   {% endfor %}
 
 </div>
-
 <a href="#" class="load_more">Load More</a>
-
 <div class="infinite-spinner"></div>
