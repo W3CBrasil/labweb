@@ -13,6 +13,6 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 
-exclude: ['Gemfile', 'Gemfile.lock']
+exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
 
 gems: [bourbon, neat]
