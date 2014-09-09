@@ -64,7 +64,7 @@ $(function() {
       url: postURL,
       dataType: 'html',
       success: function(data) {
-        $(data).appendTo(".posts");
+        $(data).filter(".project").appendTo(".posts");
         callback();
       }
     });
