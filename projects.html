@@ -9,22 +9,22 @@ permalink: /projects/
   <h1 class="title">Projetos</h1>
 
   {% for project in site.categories.projects limit: 1 %}
+    <div class="posts">
+      <div class="project">
+        <img src="/images/project-img-thumb.png" class="project-image">
+        <div class="project-description">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }} <a href="#">[...]</a></p>
+        </div>
+        <div class="project-info">
+          <img src="/images/projects/view.png">
+          <p>visualização</p>
+          <div class="project-icons">
 
-    <div class="project">
-      <img src="/images/project-img-thumb.png" class="project-image">
-      <div class="project-description">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description }} <a href="#">[...]</a></p>
-      </div>
-      <div class="project-info">
-        <img src="/images/projects/view.png">
-        <p>visualização</p>
-        <div class="project-icons">
-
+          </div>
         </div>
       </div>
     </div>
-
   {% endfor %}
 
 </div>
