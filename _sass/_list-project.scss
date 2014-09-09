@@ -1,0 +1,66 @@
+.project {
+  @include span-columns(6);
+  height: 290px;
+  border: 2px solid #FF6600;
+  position: relative;
+
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+    @include omega();
+  }
+
+  .project-description,
+  .project-image {
+    @include span-columns(3 of 6);
+  }
+
+  .project-description {
+    @include omega;
+    color: #323232;
+
+    a {
+      color: #21A0D8;
+      font-family: 'AdventProSemibold';
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .project-info {
+    height: 62px;
+    border-top: 1px dotted #FF6600;
+    color: #FFF;
+  }
+
+  .project-info {
+    @include span-columns(6 of 6);
+    background: rgba(25, 93, 147, .6);
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+
+    img,
+    p {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 30px;
+    }
+
+    p {
+      font-family: 'AdventProSemibold';
+      line-height: 62px;
+    }
+  }
+
+  .project-icons {
+    @include span-columns(3 of 6);
+    float: right;
+    height: 62px;
+    padding-left: 4.5%;
+    background: #FFF;
+    box-sizing: initial;
+  }
+}
