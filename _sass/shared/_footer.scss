@@ -1,0 +1,106 @@
+.footer {
+  border-top: 1px solid #CCC;
+  margin-top: 50px;
+  padding-top: 50px;
+
+  .title {
+    font-family: 'AdventProSemibold';
+    border-bottom: dashed 1px #CCC;
+    text-align: right;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  }
+
+  .institutional {
+    @include span-columns(5);
+    position: relative;
+
+    .footer-logo {
+      position: absolute;
+      top: 22px;
+      left: -23px;
+    }
+
+    .social {
+      li {
+        @include span-columns(1 of 5);
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+
+        &:first-child {
+          @include shift(1);
+        }
+      }
+    }
+
+    .area-links {
+      clear: both;
+      float: right;
+      border-top: dashed 1px #CCC;
+      margin: 0;
+    }
+
+    .links {
+      display: inline-block;
+      vertical-align: top;
+      list-style: none;
+      margin: 0 5px;
+
+      li {
+        text-align: center;
+        width: 145px;
+        border-top: dashed 1px #CCC;
+        font-size: 22px;
+        color: #333;
+
+        &:first-child {
+          border: none;
+        }
+
+        a {
+          color: inherit;
+          display: block;
+          margin: 10px 0;
+
+          &:hover {
+            color: #21A0D8;
+          }
+        }
+      }
+    }
+  }
+
+  .organization {
+    @include span-columns(2);
+    @include shift(5);
+    text-align: center;
+
+    .logo-small {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 4.5px;
+    }
+
+    .logo,
+    .logo-small {
+      margin-top: 20px;
+    }
+  }
+
+  .footer-info {
+    background: #005A96;
+    margin-top: 50px;
+    padding: 15px 50px;
+
+    .cardume,
+    p {
+      float: right;
+    }
+
+    p {
+      margin: 12px 20px;
+      color: #FFF;
+    }
+  }
+}
