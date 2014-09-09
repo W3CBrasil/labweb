@@ -3,11 +3,11 @@
     @include span-columns(10);
     @include shift(1);
     margin-top: 100px;
-    border-bottom: dashed 1px #CCC;
+    border-bottom: dashed 1px $grey;
 
     .title,
     .subtitle {
-      color: #A7A9AB;
+      color: $grey;
     }
 
     .title {
@@ -30,7 +30,7 @@
       font-family: 'AdventProSemibold';
       font-size: 18px;
       margin: em(70px) 0;
-      color: #21A0D8;
+      color: $light-blue;
       text-align: right;
     }
 
@@ -39,7 +39,7 @@
       font-size: 20px;
       line-height: em(22px);
       margin-bottom: 20px;
-      color: #323232;
+      color: $black;
     }
 
     img {
