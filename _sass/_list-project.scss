@@ -1,7 +1,7 @@
 .project {
   @include span-columns(6);
   height: 290px;
-  border: 2px solid #FF6600;
+  border: 2px solid $orange;
   position: relative;
 
   @include media($mobile) {
@@ -16,10 +16,10 @@
 
   .project-description {
     @include omega;
-    color: #323232;
+    color: $black;
 
     a {
-      color: #21A0D8;
+      color: $blue;
       font-family: 'AdventProSemibold';
     }
 
@@ -31,8 +31,8 @@
 
   .project-info {
     height: 62px;
-    border-top: 1px dotted #FF6600;
-    color: #FFF;
+    border-top: 1px dotted $orange;
+    color: $white;
   }
 
   .project-info {
@@ -60,7 +60,7 @@
     float: right;
     height: 61px;
     padding-left: 4.5%;
-    background: #FFF;
+    background: $white;
     box-sizing: initial;
   }
 }

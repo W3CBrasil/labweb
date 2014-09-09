@@ -14,7 +14,7 @@
     width: 41px;
     height: 94px;
     margin-left: 20px;
-    background-color: #FFF;
+    background-color: $white;
 
     img {
       margin-top: 28px;
@@ -26,7 +26,7 @@
     width: 40px;
     height: 50px;
     margin: 1px 1px 0px 20px;
-    background-color: #FFF;
+    background-color: $white;
 
     img {
       margin-top: 10px;
@@ -38,9 +38,9 @@
     @include span-columns(8);
     margin-top: 176px;
     height: 94px;
-    background-color: #FFF;
+    background-color: $white;
     @include pad;
-    color: #0094D5;
+    color: $blue;
     font-family: 'AdventProSemibold';
     font-size: 40px;
   }
@@ -49,14 +49,14 @@
     @include span-columns(8);
     margin-top: 1px;
     height: 213px;
-    background-color: #FFF;
+    background-color: $white;
     @include pad;
     font-family: 'LatoLight';
     font-size: 20px;
     line-height: golden-ratio(1em, 1);
 
     a {
-      color: #0092D3;
+      color: $blue;
     }
   }
 }
