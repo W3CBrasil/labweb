@@ -7,27 +7,39 @@
 
     .title,
     .subtitle {
-      color: #ccc;
+      color: #A7A9AB;
     }
 
     .title {
-      font-size: 46px;
+      font-size: 60px;
+      font-family: 'AdventProLight';
+
+      img {
+        margin: 0;
+        float: none;
+      }
     }
 
     .subtitle {
+      font-family: 'AdventProRegular';
       font-size: 30px;
+      margin-top: em(30px);
     }
 
     .author {
       font-family: 'AdventProSemibold';
       font-size: 18px;
-      margin: 50px 0;
+      margin: em(70px) 0;
       color: #21A0D8;
       text-align: right;
     }
 
     p {
+      font-family: 'LatoLight';
+      font-size: 20px;
+      line-height: em(22px);
       margin-bottom: 20px;
+      color: #323232;
     }
 
     img {
