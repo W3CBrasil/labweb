@@ -1,7 +1,37 @@
 .content {
   &.project-details {
+    padding: 100px 0 0 0;
+
     .project-data {
       display: none;
     }
+  }
+}
+
+.project-infos {
+  position: relative;
+  color: $white;
+
+  .title,
+  .subtitle {
+    position: absolute;
+    left: 19%;
+    font-weight: 300;
+  }
+
+  .title {
+    top: 30%;
+    font-size: 56px;
+  }
+
+  .subtitle {
+    top: 45%;
+    width: 960px;
+    font-size: 36px;
+  }
+
+  .project-image {
+    width: 100%;
+    max-height: 600px;
   }
 }
