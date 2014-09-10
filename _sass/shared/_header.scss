@@ -8,7 +8,7 @@
     color: none;
   }
 
-  .navigation {
+  nav {
     @include span-columns(8);
     float: right;
 
@@ -22,7 +22,6 @@
         text-align: center;
         font-family: 'LatoLight';
         font-size: 16px;
-        margin-right: 0;
 
         a {
           color: $orange;

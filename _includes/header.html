@@ -3,15 +3,11 @@
     <a href="{{ site.url }}" class="link-logo">
       <img src="/images/logo.png" class="logo">
     </a>
-    <nav class="navigation">
+    <nav>
       <ul>
-        {% for page in site.pages %}
-          {% if page.title %}
-            <li>
-              <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-            </li>
-          {% endif %}
-        {% endfor %}
+        <li><a href="/projects">projetos</a></li>
+        <li><a href="/about">sobre</a></li>
+        <li><a href="/contribute">colabore</a></li>
         <li><a href="#">w3c brasil</a></li>
       </ul>
     </nav>
