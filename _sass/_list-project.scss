@@ -1,7 +1,7 @@
 .project {
   @include span-columns(6);
   height: 290px;
-  border: 2px solid $orange;
+  border: 1px solid $orange;
   position: relative;
   margin-bottom: 20px;
 
@@ -23,26 +23,28 @@
     @include omega;
     color: $black;
 
+    h2 {
+      @include pad(20px 0px);
+      font-size: em(26px);
+    }
+
     a {
       color: $blue;
       font-family: 'AdventProSemibold';
     }
 
     p {
-      margin-top: 20px;
-      font-size: 14px;
+      font-size: em(12px);
+      font-family: 'LatoRegular';
+      line-height: em(22px);
     }
   }
 
   .project-info {
+    @include span-columns(6 of 6);
     height: 62px;
     border-top: 1px dotted $orange;
     color: $white;
-  }
-
-  .project-info {
-    @include span-columns(6 of 6);
-    background: rgba(25, 93, 147, .6);
     z-index: 2;
     position: absolute;
     bottom: 0;
@@ -58,6 +60,12 @@
       font-family: 'AdventProSemibold';
       line-height: 62px;
     }
+
+    .project-type {
+      @include span-columns(3 of 6);
+      height: 61px;
+      background: rgba(25, 93, 147, .6);
+    }
   }
 
   .project-icons {
@@ -66,7 +74,6 @@
     top:0;
     right: 0;
     height: 61px;
-    padding-left: 4.5%;
     background: $white;
     box-sizing: initial;
   }
