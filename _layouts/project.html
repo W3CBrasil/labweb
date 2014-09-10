@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-  </head>
+  {% include head.html %}
 
   <body>
 
-    <div class="project-data">
-      {% include project_data.html project=page %}
-    </div>
+    {% include header.html %}
+
+    <section class="container">
+      <div class="content project-details">
+        <div class="project-data">
+          {% include project_data.html project=page %}
+        </div>
+        {{ content }}
+      </div>
+    </section>
+
+    {% include footer.html %}
   </body>
 </html>
