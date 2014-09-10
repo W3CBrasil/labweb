@@ -5,19 +5,9 @@
   </head>
 
   <body>
-    <div class="project">
-      <img src="/images/project-img-thumb.png" class="project-image">
-        <div class="project-description">
-          <h2>{{ page.title }}</h2>
-          <p>{{ page.description }} <a href="#">[...]</a></p>
-        </div>
-        <div class="project-info">
-          <img src="/images/projects/view.png">
-          <p>visualização</p>
-          <div class="project-icons">
 
-          </div>
-        </div>
+    <div class="project-data">
+      {% include project_data.html project=page %}
     </div>
   </body>
 </html>
