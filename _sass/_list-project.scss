@@ -57,7 +57,9 @@
 
   .project-icons {
     @include span-columns(3 of 6);
-    float: right;
+    position: absolute;
+    top:0;
+    right: 0;
     height: 61px;
     padding-left: 4.5%;
     background: $white;
