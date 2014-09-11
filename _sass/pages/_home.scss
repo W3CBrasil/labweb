@@ -91,11 +91,19 @@
           cursor: pointer;
 
           &.list-mode {
-            background: url("/images/listing-mode/image.png");
+            background: url("/images/listing-mode/list.png");
+
+            &.active {
+              background: url("/images/listing-mode/list-active.png");
+            }
           }
 
           &.image-mode {
-            background: url("/images/listing-mode/list.png");
+            background: url("/images/listing-mode/image.png");
+
+            &.active {
+              background: url("/images/listing-mode/image-active.png");
+            }
           }
         }
       }
