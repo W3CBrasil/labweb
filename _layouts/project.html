@@ -45,38 +45,19 @@
         </ul>
 
         <h2 class="title-authors">Autores:</h1>
-
         <ul class="project-list-info">
-          <li class="info authors">
-            <img src="/images/bg-highlight.png" class="project-image">
-            <div class="type">
-              <h3>Vitor Batista</h3>
-              <p><small>
-                vitor@gmail.com<br>
-                <a href="#">http://link.com</a>
-              </small></p>
-            </div>
-          </li>
-          <li class="info authors">
-            <img src="/images/bg-highlight.png" class="project-image">
-            <div class="type">
-              <h3>Vitor Batista</h3>
-              <p><small>
-                vitor@gmail.com<br>
-                <a href="#">http://link.com</a>
-              </small></p>
-            </div>
-          </li>
-          <li class="info authors">
-            <img src="/images/bg-highlight.png" class="project-image">
-            <div class="type">
-              <h3>Vitor Batista</h3>
-              <p><small>
-                vitor@gmail.com<br>
-                <a href="#">http://link.com</a>
-              </small></p>
-            </div>
-          </li>
+          {% for author in page.authors %}
+            <li class="info authors">
+              <img src="{{ site.data.authors[author].avatar }}" class="project-image">
+              <div class="type">
+                <h3>{{ site.data.authors[author].name }}</h3>
+                <p><small>
+                  {{ site.data.authors[author].email }}<br>
+                  <a href="{{ site.data.authors[author].site }}">{{ site.data.authors[author].site }}</a>
+                </small></p>
+              </div>
+            </li>
+          {% endfor %}
         </ul>
 
         {{ content }}
