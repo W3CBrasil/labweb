@@ -83,12 +83,16 @@
             margin-bottom: 10px;
           }
 
-          &:before {
+          img {
             height: 120px;
             width: 120px;
             border-radius: 50%;
             border: solid 3px $white;
             background-color: $black;
+          }
+
+          &:before {
+            content: none;
           }
         }
 

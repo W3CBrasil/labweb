@@ -3,7 +3,12 @@
     @include span-columns(6);
     border: 2px solid $orange;
     position: relative;
+    margin-bottom: 20px;
     transition: all .1s;
+
+    &:nth-child(even) {
+      @include omega;
+    }
 
     @include media($mobile) {
       @include span-columns(4 of 4);
