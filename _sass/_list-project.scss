@@ -3,6 +3,11 @@
   height: 290px;
   border: 2px solid $orange;
   position: relative;
+  margin-bottom: 20px;
+
+  &:nth-child(even) {
+    @include omega;
+  }
 
   @include media($mobile) {
     @include span-columns(4 of 4);
