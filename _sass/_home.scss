@@ -64,6 +64,7 @@
 .banner {
   @include span-columns(8);
   overflow: auto;
+  max-width: 633px;
 }
 
 .banner li {
