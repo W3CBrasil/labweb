@@ -1,68 +1,124 @@
-.project {
-  @include span-columns(6);
-  height: 290px;
-  border: 2px solid $orange;
-  position: relative;
+.posts {
+  .project {
+    @include span-columns(6);
+    border: 2px solid $orange;
+    position: relative;
+    transition: all .1s;
 
-  @include media($mobile) {
-    @include span-columns(4 of 4);
-    @include omega();
-  }
-
-  .project-description,
-  .project-image {
-    @include span-columns(3 of 6);
-  }
-
-  .project-description {
-    @include omega;
-    color: $black;
-
-    a {
-      color: $blue;
-      font-family: 'AdventProSemibold';
+    @include media($mobile) {
+      @include span-columns(4 of 4);
+      @include omega();
     }
 
-    p {
-      margin-top: 20px;
-      font-size: 14px;
+    .project-description {
+      color: $black;
+
+      a {
+        color: $blue;
+        font-family: 'AdventProSemibold';
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    }
+
+    .project-icons,
+    .project-info {
+      position: absolute;
+    }
+
+    .project-icons {
+      background: $white;
+    }
+
+    .project-info {
+      z-index: 2;
+      color: $white;
+      background: rgba(25, 93, 147, .6);
+    }
+
+  }
+
+  &.image {
+    .project {
+      height: 290px;
+
+      .project-description,
+      .project-image {
+        @include span-columns(3 of 6);
+      }
+
+      .project-description {
+        @include omega;
+      }
+
+      .project-info {
+        @include span-columns(6 of 6);
+        bottom: 0;
+        height: 62px;
+        border-top: 1px dotted $orange;
+
+        img,
+        p {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 30px;
+        }
+
+        p {
+          font-family: 'AdventProSemibold';
+          line-height: 62px;
+        }
+      }
+
+      .project-icons {
+        @include span-columns(3 of 6);
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 61px;
+        padding-left: 4.5%;
+        box-sizing: initial;
+      }
     }
   }
 
-  .project-info {
-    height: 62px;
-    border-top: 1px dotted $orange;
-    color: $white;
-  }
+  &.list {
+    .project {
+      height: 200px;
+      padding: 20px;
 
-  .project-info {
-    @include span-columns(6 of 6);
-    background: rgba(25, 93, 147, .6);
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
+      .project-image {
+        display: none;
+      }
 
-    img,
-    p {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 30px;
+      .project-info {
+        @include span-columns(1 of 6);
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-right: 1px dotted $orange;
+
+        img {
+          margin: 8px 18px;
+        }
+
+        p {
+          display: none;
+        }
+      }
+
+      .project-icons {
+        @include span-columns(6 of 6);
+        height: 69.5%;
+      }
+
+      .project-description {
+        @include span-columns(5 of 6);
+        @include shift(1);
+      }
     }
-
-    p {
-      font-family: 'AdventProSemibold';
-      line-height: 62px;
-    }
-  }
-
-  .project-icons {
-    @include span-columns(3 of 6);
-    position: absolute;
-    top:0;
-    right: 0;
-    height: 61px;
-    padding-left: 4.5%;
-    background: $white;
-    box-sizing: initial;
   }
 }
