@@ -18,8 +18,7 @@
     background-color: $white;
 
     img {
-      margin-top: 28px;
-      float: right;
+      margin: 20px 10px;
     }
   }
 
@@ -36,7 +35,7 @@
   }
 
   .highlight-title {
-    @include span-columns(8);
+    @include span-columns(8 fo 8);
     margin-top: 176px;
     height: 94px;
     background-color: $white;
@@ -47,11 +46,11 @@
   }
 
   .highlight-description {
-    @include span-columns(8);
+    @include span-columns(8 of 8);
+    @include pad;
     margin-top: 1px;
     height: 213px;
     background-color: $white;
-    @include pad;
     font-family: 'LatoLight';
     font-size: 20px;
     line-height: golden-ratio(1em, 1);
@@ -63,7 +62,7 @@
 }
 
 .banner {
-  position: relative;
+  @include span-columns(8);
   overflow: auto;
 }
 

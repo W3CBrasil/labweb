@@ -2,7 +2,8 @@ $(function() {
   var unslider = $('.banner').unslider({
     delay: 8000,
     keys: false,
-    dots: false
+    dots: false,
+    fluid: false
   });
 
   $(".highlight-arrow").on('click', function(e) {
