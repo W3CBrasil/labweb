@@ -7,21 +7,9 @@ layout: home
     <span>Mais Projetos</span>
   </header>
 
-  <div class="project">
-    <img src="/images/project-img-thumb.png" class="project-image">
-    <div class="project-description">
-      <h2>Título do Projeto</h2>
-      <p>
-        Descrição do projeto no thumbnail com mouse over consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore lorem ipsum sit dolor amet hyperlink aliquam erat volutpat. Ut wisi enim ad minim veniam, veniam, quis nostrud exerci tation aliquip ex ea commodo consequat.
-        <a href="#">[...]</a>
-      </p>
-    </div>
-    <div class="project-info">
-      <img src="/images/projects/view.png">
-      <p>visualização</p>
-      <div class="project-icons">
-
-      </div>
-    </div>
+  <div class="posts">
+    {% for project in site.categories.projects limit: 10 %}
+      {% include project_data.html project=project %}
+    {% endfor %}
   </div>
 </section>
