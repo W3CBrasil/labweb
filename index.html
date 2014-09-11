@@ -5,9 +5,13 @@ layout: home
 <section class="content home">
   <header>
     <h2>Mais Projetos</h2>
+    <ul class="listing-mode" data-listing-mode>
+      <li class="image-mode" data-listing-change="image"></li>
+      <li class="list-mode" data-listing-change="list"></li>
+    </ul>
   </header>
 
-  <div class="posts">
+  <div class="posts" data-projects-wrapper>
     {% for project in site.categories.projects limit: 10 %}
       {% include project_data.html project=project %}
     {% endfor %}
