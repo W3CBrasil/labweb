@@ -1,13 +1,85 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-  </head>
+  {% include head.html %}
 
   <body>
 
-    <div class="project-data">
-      {% include project_data.html project=page %}
+    {% include header.html %}
+    <div class="project-infos">
+      <p class="subtitle">{{ page.subtitle }}</p>
+      <h1 class="title">{{ page.title }}</h1>
+      <img src="/images/bg-highlight.png" class="project-image">
     </div>
+    <section class="container">
+      <div class="content project-details">
+        <div class="project-data">
+          {% include project_data.html project=page %}
+        </div>
+
+        <ul class="project-list-info">
+          <li class="info category">
+            <p class="type"><small>categoria</small><br>
+              visualização</p>
+          </li>
+          <li class="info github">
+            <p class="type"><small>acesse o repositório</small><br>
+              no GitHub</p>
+          </li>
+          <li class="info final-version">
+            <p class="type"><small>versão final</small><br>
+              <a href="#">http://retratodaviolencia.org/</a></p>
+          </li>
+          <li class="info source">
+            <p class="type"><small>linguagens usadas</small><br>
+              JSON, HTML, CSS, JavaScript</p>
+          </li>
+          <li class="info status">
+            <p class="type"><small>status</small><br>
+              Lançado em xx/xx/xx</p>
+          </li>
+          <li class="info datas">
+            <p class="type"><small>dados brutos</small><br>
+              <a href="#">http://dados.rs.gov.br/dataset/violencia­contra­mulher­estupros</a></p>
+          </li>
+        </ul>
+
+        <h2 class="title-authors">Autores:</h1>
+
+        <ul class="project-list-info">
+          <li class="info authors">
+            <div class="type">
+              <h3>Vitor Batista</h3>
+              <p><small>
+                vitor@gmail.com<br>
+                <a href="#">http://link.com</a>
+              </small></p>
+            </div>
+          </li>
+          <li class="info authors">
+            <div class="type">
+              <h3>Vitor Batista</h3>
+              <p><small>
+                vitor@gmail.com<br>
+                <a href="#">http://link.com</a>
+              </small></p>
+            </div>
+          </li>
+          <li class="info authors">
+            <div class="type">
+              <h3>Vitor Batista</h3>
+              <p><small>
+                vitor@gmail.com<br>
+                <a href="#">http://link.com</a>
+              </small></p>
+            </div>
+          </li>
+        </ul>
+
+        {{ content }}
+      </div>
+    </section>
+
+    {% include footer.html %}
   </body>
 </html>
