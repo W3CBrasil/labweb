@@ -3,10 +3,43 @@
     margin-top: 120px;
 
     .title {
-      font-size: 48px;
+      @include span-columns(8);
       font-weight: 300;
+      font-size: 56px;
       color: $grey;
-      margin: 40px 0;
+      margin-bottom: 30px;
     }
+
+  }
+}
+
+.list-load-more {
+  @include clearfix;
+  list-style: none;
+  clear: both;
+
+  li {
+    @include span-columns(4);
+    color: $grey;
+    display: inline-block;
+    vertical-align: middle;
+
+    &:last-child {
+      @include omega;
+    }
+
+    &.dashed{
+      margin-top: 20px;
+      border-top: 1px dashed;
+    }
+  }
+}
+
+.load_more {
+  font-size: em(30px);
+
+  &:hover {
+    color: $blue;
+    cursor: pointer;
   }
 }
