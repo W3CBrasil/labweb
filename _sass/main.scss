@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 @import 'bourbon';
 @import 'neat-helpers';
@@ -6,19 +6,19 @@
 @import 'neat';
 @import 'fonts';
 @import 'colors';
+@import 'compass/utilities/sprites';
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "base";
-@import "shared/header";
-@import "shared/footer";
-@import "pages/about";
-@import "pages/projects";
-@import "pages/project-details";
-@import "pages/home";
-@import "list-project";
-@import "listing-mode";
-@import "vendor/tooltipster";
-
-@import "compass/reset";
-@import "compass/utilities/sprites";
-@import "compass/sprites"
+@import 'base';
+@import 'sprites';
+@import 'shared/header';
+@import 'shared/footer';
+@import 'pages/about';
+@import 'pages/projects';
+@import 'pages/project-details';
+@import 'home';
+@import 'list-project';
+@import 'pages/home';
+@import 'list-project';
+@import 'listing-mode';
+@import 'vendor/tooltipster';

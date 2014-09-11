@@ -92,7 +92,6 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon (~> 4.0.2)
-  compass (~> 1.1.0.alpha.2)
   jekyll (~> 2.3.0)
-  jekyll-compass
+  jekyll-compass (~> 1.2.0)
   neat (~> 1.6.0)
