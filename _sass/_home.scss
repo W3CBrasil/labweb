@@ -74,3 +74,16 @@
 .banner ul li {
   float: left;
 }
+
+.home-projects {
+  header {
+    @include clearfix;
+    margin-bottom: 50px;
+
+    span {
+      font-family: 'AdventProLight';
+      font-size: 60px;
+      color: $grey;
+    }
+  }
+}
