@@ -65,7 +65,6 @@ $(function() {
       url: postURL,
       dataType: 'html',
       success: function(data) {
-        console.log(adjustIndex)
         if(adjustIndex === 0) {
           $(data).find(".project").addClass('omega').appendTo(".posts");
         }
