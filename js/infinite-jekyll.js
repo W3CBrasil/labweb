@@ -71,6 +71,12 @@ $(function() {
         else {
           $(data).find(".project").appendTo(".posts");
         }
+        $('.tooltip').tooltipster({
+          position: 'bottom',
+          theme: 'tooltip-project',
+          contentAsHTML: true,
+          interactive: true
+        });
         callback();
       }
     });

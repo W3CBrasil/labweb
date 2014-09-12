@@ -173,3 +173,21 @@
     }
   }
 }
+
+.tooltip-project {
+  border: 1px solid $orange;
+  background: $white;
+  color: $black;
+  max-width: 150px;
+
+  .tooltipster-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+
+    a {
+      color: inherit;
+    }
+  }
+}
