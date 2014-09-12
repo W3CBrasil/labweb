@@ -2,7 +2,7 @@
   <img src="/images/project-img-thumb.png" class="project-image">
   <div class="project-description">
     <h2>{{ include.project.title }}</h2>
-    <p>{{ include.project.description }} <a href="{{include.project.url | prepend: site.baseurl}}">[...]</a></p>
+    <p>{{ include.project.description | markdownify }} <a href="{{include.project.url | prepend: site.baseurl}}">[...]</a></p>
   </div>
 
   <div class="project-info">
