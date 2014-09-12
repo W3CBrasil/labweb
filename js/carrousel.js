@@ -6,6 +6,13 @@ $(function() {
     fluid: false
   });
 
+  var unslider = $('.carousel').unslider({
+    delay: 4000,
+    keys: false,
+    dots: true,
+    fluid: false
+  });
+
   $(".highlight-arrow").on('click', function(e) {
     e.preventDefault();
 
