@@ -36,6 +36,29 @@
 
     .project-icons {
       background: $white;
+      ul {
+        list-style: none;
+
+        li {
+          &.code {
+            width: 19px;
+            height: 12px;
+            background: url("/images/projects/icons/code.png") no-repeat;
+          }
+
+          &.author {
+            width: 21px;
+            height: 22px;
+            background: url("/images/projects/icons/autores.png") no-repeat;
+          }
+
+          &.github {
+            width: 25px;
+            height: 22px;
+            background: url("/images/projects/icons/git.png") no-repeat;
+          }
+        }
+      }
     }
 
     .project-info {
@@ -85,7 +108,16 @@
         right: 0;
         height: 61px;
         padding-left: 4.5%;
-        box-sizing: initial;
+        box-sizing: content-box;
+        -moz-box-sizing: content-box;
+
+        ul {
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 20px;
+          }
+        }
       }
     }
   }
@@ -118,6 +150,20 @@
       .project-icons {
         @include span-columns(6 of 6);
         height: 69.5%;
+
+        ul {
+          li {
+            margin: 19px;
+
+            &.code {
+              background: url("/images/projects/icons/code.png") 1px 0 no-repeat;
+            }
+
+            &.github {
+              background-position: -1px 0;
+            }
+          }
+        }
       }
 
       .project-description {
