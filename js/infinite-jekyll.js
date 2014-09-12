@@ -58,13 +58,20 @@ $(function() {
   }
 
   function fetchPostWithIndex(index, callback) {
-    var postURL = postURLs[index];
+    var postURL     = postURLs[index],
+        adjustIndex = (index + 1) % 2;
 
     $.ajax({
       url: postURL,
       dataType: 'html',
       success: function(data) {
-        $(data).find(".project").appendTo(".posts");
+        console.log(adjustIndex)
+        if(adjustIndex === 0) {
+          $(data).find(".project").addClass('omega').appendTo(".posts");
+        }
+        else {
+          $(data).find(".project").appendTo(".posts");
+        }
         callback();
       }
     });

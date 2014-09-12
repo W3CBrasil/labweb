@@ -9,11 +9,12 @@ permalink: /projects/
   <h2 class="title">Projetos</h2>
   {% include listing-mode.html %}
 
-  {% for project in site.categories.projects limit: 1 %}
-    <div class="posts" data-projects-wrapper>
+  <div class="posts" data-projects-wrapper>
+    {% for project in site.categories.projects limit: 2 %}
+      {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
       {% include project_data.html project=project %}
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 
 </div>
 <ul class="list-load-more">

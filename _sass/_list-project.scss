@@ -6,7 +6,7 @@
     margin-bottom: 20px;
     transition: all .1s;
 
-    &:nth-child(even) {
+    &.omega {
       @include omega;
     }
 
