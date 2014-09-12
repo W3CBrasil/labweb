@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="highlight-description">
-                  {{ project.description }}
+                  {{ project.description | markdownify }}
                 </div>
               </li>
             {% endfor %}
