@@ -105,12 +105,12 @@
 
         &.prev {
           left: 1px;
-          background: url("/images/arrow-left.png") no-repeat 10px 15px, rgba(255, 255, 255, .4);
+          background: url("/images/arrow-left.png") no-repeat 12px 15px, rgba(255, 255, 255, .4);
         }
 
         &.next {
           right: 1px;
-          background: url("/images/arrow-right.png") no-repeat 10px 15px, rgba(255, 255, 255, .4);
+          background: url("/images/arrow-right.png") no-repeat 14px 15px, rgba(255, 255, 255, .4);
         }
       }
     }
