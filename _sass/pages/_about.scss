@@ -46,5 +46,73 @@
       margin-left: 20px;
       float: right;
     }
+
+    .carousel {
+      @include span-columns(8 of 10);
+      @include shift(1);
+      position: relative;
+      margin-top: 50px;
+      margin-bottom: 25px;
+      padding-top: 25px;
+      overflow: auto;
+      max-width: 633px;
+
+      ul {
+        list-style: none;
+
+        li {
+          float: left;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .button,
+      .dots {
+        position: absolute;
+      }
+
+      .dots {
+        top:0;
+        width: 100%;
+        text-align: center;
+
+        .dot {
+          display: inline-block;
+          vertical-align: top;
+          width: 10px;
+          height: 10px;
+          margin: 0 10px;
+          color: transparent;
+          border: solid 1px $orange;
+          border-radius: 50%;
+          transition: all .2s;
+
+          &.active {
+            background: $orange;
+          }
+        }
+      }
+
+      .button {
+        top: 26px;
+        z-index: 5;
+        height: 60px;
+        width: 45px;
+        border: none;
+
+        &.prev {
+          left: 1px;
+          background: url("/images/arrow-left.png") no-repeat 12px 15px, rgba(255, 255, 255, .4);
+        }
+
+        &.next {
+          right: 1px;
+          background: url("/images/arrow-right.png") no-repeat 14px 15px, rgba(255, 255, 255, .4);
+        }
+      }
+    }
   }
 }
