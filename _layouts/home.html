@@ -25,14 +25,14 @@
 
         <div class="banner">
           <ul>
-            {% for project in site.categories.projects limit: 4 %}
+            {% for post in site.posts limit: 4 %}
               <li>
                 <div class="highlight-title">
-                  {{ project.title }}
+                  {{ post.title }}
                 </div>
 
                 <div class="highlight-description">
-                  {{ project.description | markdownify }}
+                  {{ post.description | markdownify }}
                 </div>
               </li>
             {% endfor %}

@@ -9,10 +9,9 @@ layout: home
   </header>
 
   <div class="posts" data-projects-wrapper>
-    {% for project in site.categories.projects limit: 10 %}
+    {% for post in site.posts limit: 10 %}
       {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
-      {% include project_data.html project=project %}
+      {% include project_data.html post=post %}
     {% endfor %}
   </div>
-
 </section>
