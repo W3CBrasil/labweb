@@ -15,4 +15,4 @@ markdown: kramdown
 
 exclude: ['Gemfile', 'Gemfile.lock', 'vendor']
 
-gems: [bourbon, neat]
+gems: ['bourbon', 'neat', 'jekyll-compass']
