@@ -1,8 +1,11 @@
 <div class="see-also">
+  <h2 class="title">Veja também</h2>
   <ul>
     {% for post in site.posts limit: 8 %}
       <li>
+        <h3 class="title">{{ post.title }}</h3>
         {{ post.description | markdownify }}
+        <a href="{{ post.url }}">[...]</a>
       </li>
     {% endfor %}
   </ul>
