@@ -1,0 +1,9 @@
+<div class="see-also">
+  <ul>
+    {% for post in site.posts limit: 8 %}
+      <li>
+        {{ post.description | markdownify }}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
