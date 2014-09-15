@@ -20,6 +20,10 @@
       border-bottom: dashed 1px $orange;
       color: $black;
 
+      &.omega {
+        @include omega;
+      }
+
       .title {
         font-size: 24px;
         font-weight: normal;
