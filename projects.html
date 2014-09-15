@@ -15,7 +15,7 @@ permalink: /projects/
   {% include listing-mode.html %}
 
   <div class="posts" data-projects-wrapper>
-    {% for post in site.posts limit: 2 %}
+    {% for post in site.posts limit: 6 %}
       {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
       {% include project_data.html post=post %}
     {% endfor %}
