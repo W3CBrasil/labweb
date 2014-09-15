@@ -85,6 +85,8 @@ $(function() {
   function disableFetching() {
     shouldFetchPosts = false;
     isFetchingPosts = false;
+
+    $(".load_more").fadeOut();
     $(".infinite-spinner").fadeOut();
   }
 
