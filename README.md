@@ -2,7 +2,9 @@
 
 ## Running
 
-  jekyll serve --watch
+  $ bundle install
+
+  $ jekyll serve --watch
 
 ## Staging
 
