@@ -58,13 +58,25 @@ $(function() {
   }
 
   function fetchPostWithIndex(index, callback) {
-    var postURL = postURLs[index];
+    var postURL      = postURLs[index],
+        isOddProject = (index + 1) % 2 === 0;
 
     $.ajax({
       url: postURL,
       dataType: 'html',
       success: function(data) {
-        $(data).find(".project").appendTo(".posts");
+        if(isOddProject) {
+          $(data).find(".project").addClass('omega').appendTo(".posts");
+        }
+        else {
+          $(data).find(".project").appendTo(".posts");
+        }
+        $('.tooltip').tooltipster({
+          position: 'bottom',
+          theme: 'tooltip-project',
+          contentAsHTML: true,
+          interactive: true
+        });
         callback();
       }
     });

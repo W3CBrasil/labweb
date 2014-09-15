@@ -4,16 +4,22 @@ title: projetos
 permalink: /projects/
 ---
 
-<div class="content projects" data-projects>
+<div class="content projects">
 
-  <h1 class="title">Projetos</h1>
+  <h2 class="title">Projetos</h2>
+  {% include listing-mode.html %}
 
-  {% for project in site.categories.projects limit: 1 %}
-    <div class="posts">
+  <div class="posts" data-projects-wrapper>
+    {% for project in site.categories.projects limit: 2 %}
+      {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
       {% include project_data.html project=project %}
-    </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 
 </div>
-<a href="#" class="load_more">Load More</a>
+<ul class="list-load-more">
+  <li class="dashed"></li>
+  <li><a class="load_more">[carregar mais resultados]</a></li>
+  <li class="dashed"></li>
+</ul>
 <div class="infinite-spinner"></div>

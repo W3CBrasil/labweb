@@ -1,80 +1,193 @@
-.project {
-  @include span-columns(6);
-  height: 290px;
-  border: 1px solid $orange;
-  position: relative;
-  margin-bottom: 20px;
+.posts {
+  .project {
+    @include span-columns(6);
+    border: 2px solid $orange;
+    position: relative;
+    margin-bottom: 20px;
+    transition: all .1s;
 
-  &:nth-child(even) {
-    @include omega;
-  }
-
-  @include media($mobile) {
-    @include span-columns(4 of 4);
-    @include omega();
-  }
-
-  .project-description,
-  .project-image {
-    @include span-columns(3 of 6);
-  }
-
-  .project-description {
-    @include omega;
-    color: $black;
-
-    h2 {
-      @include pad(20px 0px);
-      font-size: em(26px);
+    &.omega {
+      @include omega;
     }
 
-    a {
-      color: $blue;
-      font-family: 'AdventProSemibold';
+    @include media($mobile) {
+      @include span-columns(4 of 4);
+      @include omega();
     }
 
-    p {
-      font-size: em(12px);
-      font-family: 'LatoRegular';
-      line-height: em(22px);
-    }
-  }
+    .project-description {
+      color: $black;
 
-  .project-info {
-    @include span-columns(6 of 6);
-    height: 62px;
-    border-top: 1px dotted $orange;
-    color: $white;
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
+      a {
+        color: $blue;
+        font-family: 'AdventProSemibold';
+      }
 
-    img,
-    p {
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 30px;
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+      }
     }
 
-    p {
-      font-family: 'AdventProSemibold';
-      line-height: 62px;
+    .project-icons,
+    .project-info {
+      position: absolute;
     }
 
-    .project-type {
-      @include span-columns(3 of 6);
-      height: 61px;
+    .project-icons {
+      background: $white;
+      ul {
+        list-style: none;
+
+        li {
+          &.code {
+            width: 19px;
+            height: 12px;
+            background: url("/images/projects/icons/code.png") no-repeat;
+          }
+
+          &.author {
+            width: 21px;
+            height: 22px;
+            background: url("/images/projects/icons/autores.png") no-repeat;
+          }
+
+          &.github {
+            width: 25px;
+            height: 22px;
+            background: url("/images/projects/icons/git.png") no-repeat;
+          }
+        }
+      }
+    }
+
+    .project-info {
+      z-index: 2;
+      color: $white;
       background: rgba(25, 93, 147, .6);
     }
+
   }
 
-  .project-icons {
-    @include span-columns(3 of 6);
-    position: absolute;
-    top:0;
-    right: 0;
-    height: 61px;
-    background: $white;
-    box-sizing: initial;
+  &.image {
+    .project {
+      height: 290px;
+
+      .project-description,
+      .project-image {
+        @include span-columns(3 of 6);
+      }
+
+      .project-description {
+        @include omega;
+      }
+
+      .project-info {
+        @include span-columns(6 of 6);
+        bottom: 0;
+        height: 62px;
+        border-top: 1px dotted $orange;
+
+        img,
+        p {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 30px;
+        }
+
+        p {
+          font-family: 'AdventProSemibold';
+          line-height: 62px;
+        }
+      }
+
+      .project-icons {
+        @include span-columns(3 of 6);
+        position: absolute;
+        top:0;
+        right: 0;
+        height: 61px;
+        padding-left: 4.5%;
+        box-sizing: content-box;
+        -moz-box-sizing: content-box;
+
+        ul {
+          li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &.list {
+    .project {
+      height: 200px;
+      padding: 20px;
+
+      .project-image {
+        display: none;
+      }
+
+      .project-info {
+        @include span-columns(1 of 6);
+        left: 0;
+        top: 0;
+        height: 100%;
+        border-right: 1px dotted $orange;
+
+        img {
+          margin: 8px 18px;
+        }
+
+        p {
+          display: none;
+        }
+      }
+
+      .project-icons {
+        @include span-columns(6 of 6);
+        height: 69.5%;
+
+        ul {
+          li {
+            margin: 19px;
+
+            &.code {
+              background: url("/images/projects/icons/code.png") 1px 0 no-repeat;
+            }
+
+            &.github {
+              background-position: -1px 0;
+            }
+          }
+        }
+      }
+
+      .project-description {
+        @include span-columns(5 of 6);
+        @include shift(1);
+      }
+    }
+  }
+}
+
+.tooltip-project {
+  border: 1px solid $orange;
+  background: $white;
+  color: $black;
+  max-width: 150px;
+
+  .tooltipster-content {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 10px;
+
+    a {
+      color: inherit;
+    }
   }
 }

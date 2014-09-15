@@ -2,12 +2,17 @@
 layout: home
 ---
 
-<section class="home-projects">
+<section class="content home">
   <header>
-    <span>Mais Projetos</span>
+    <h2>Mais Projetos</h2>
+    {% include listing-mode.html %}
   </header>
 
-  {% for project in site.categories.projects limit: 6 %}
-    {% include project_data.html project=project %}
-  {% endfor %}
+  <div class="posts" data-projects-wrapper>
+    {% for project in site.categories.projects limit: 10 %}
+      {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
+      {% include project_data.html project=project %}
+    {% endfor %}
+  </div>
+
 </section>

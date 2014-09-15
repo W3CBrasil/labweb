@@ -1,8 +1,8 @@
-<div class="project">
+<div class="project {% if modulus == "0" %}omega{% endif %}">
   <img src="/images/project-img-thumb.png" class="project-image">
   <div class="project-description">
     <h2>{{ include.project.title }}</h2>
-    <p>{{ include.project.description }} <a href="{{include.project.url | prepend: site.baseurl}}">[...]</a></p>
+    <p>{{ include.project.description | markdownify }} <a href="{{include.project.url | prepend: site.baseurl}}">[...]</a></p>
   </div>
 
   <div class="project-info">
@@ -11,7 +11,11 @@
       <p>visualização</p>
     </div>
     <div class="project-icons">
-
+      <ul>
+        <li class="code tooltip" title="JSON, HTML, CSS, JavaScript"></li>
+        <li class="author tooltip" title="Vinícius Palma&lt;br&gt;Vinícius Palma&lt;br&gt;Vinícius Palma&lt;br&gt;"></li>
+        <li class="github tooltip" title="&lt;a href=&quot;http://github.com/Codeminer42&quot; target=&quot;_blank&quot; &gt;Acesse o GitHub"></li>
+      </ul>
     </div>
   </div>
 </div>
