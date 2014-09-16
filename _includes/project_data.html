@@ -1,5 +1,9 @@
 <div class="project {% if modulus == "0" %}omega{% endif %}">
-  <img src="/images/project-img-thumb.png" class="project-image">
+  {% if include.post.thumb %}
+    <img src="/images/projects-thumbs/{{ include.post.thumb }}" class="project-image">
+  {% else %}
+    <img src="/images/projects-thumbs/project-default.png" class="project-image">
+  {% endif %}
   <div class="project-description">
     <h2>{{ include.post.title }}</h2>
     <p>{{ include.post.description | markdownify }} <a href="{{include.post.url | prepend: site.baseurl}}">[...]</a></p>
