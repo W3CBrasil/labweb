@@ -76,6 +76,10 @@
     @include shift(5);
     text-align: center;
 
+    @include media($bp-960){
+      @include shift(0);
+    }
+
     .logo-small {
       display: inline-block;
       vertical-align: top;
@@ -101,6 +105,27 @@
     p {
       margin: 12px 20px;
       color: #FFF;
+    }
+  }
+
+  @include media($bp-960){
+    .institutional {
+      @include span-columns(12 of 12);
+      @include omega;
+
+      .footer-logo {
+        left: 0;
+      }
+    }
+
+    .organization {
+      @include span-columns(12 of 12);
+      @include omega;
+
+      .logo-small
+      .logo {
+        @include span-columns(4 of 12);
+      }
     }
   }
 }

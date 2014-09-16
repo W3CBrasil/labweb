@@ -1,8 +1,8 @@
 <div class="project {% if modulus == "0" %}omega{% endif %}">
   <img src="/images/project-img-thumb.png" class="project-image">
   <div class="project-description">
-    <h2>{{ include.post.title }}</h2>
-    <p>{{ include.post.description | markdownify }} <a href="{{include.post.url | prepend: site.baseurl}}">[...]</a></p>
+    <a class="title" href="{{include.post.url | prepend: site.baseurl}}">{{ include.post.title }}</a>
+    {{ include.post.description | markdownify }} <a href="{{include.post.url | prepend: site.baseurl}}">[...]</a>
   </div>
 
   <div class="project-info">
