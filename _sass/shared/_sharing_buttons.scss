@@ -1,0 +1,20 @@
+.sharing-buttons {
+  .title {
+    @include span-columns(3 of 12);
+    @include shift(1);
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  .buttons {
+    @include span-columns(6 of 12);
+    @include shift(1);
+    list-style: none;
+    margin-top: 20px;
+
+    li {
+      @include span-columns(2 of 6);
+    }
+  }
+}
