@@ -1,15 +1,18 @@
 module Jekyll
   class CategoryIconTag < Liquid::Tag
 
-    def initialize(tag_name, category, tokens)
+    def initialize(tag_name, options, tokens)
       super
-      @category = category
+      split = options.split
+
+      @category = split[0]
+      @prepend = split[1]
     end
 
     def render(context)
       image = icon context[@category]
 
-      "#{path}/cat_#{image}.png"
+      "#{path}/#{image}.png"
     end
 
     def path
@@ -17,7 +20,7 @@ module Jekyll
     end
 
     def icon(category)
-      category.downcase[0, 3]
+      [@prepend, "cat_", category.downcase[0, 3]].join
     end
   end
 end
