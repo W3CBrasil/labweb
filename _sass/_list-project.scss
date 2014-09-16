@@ -104,12 +104,13 @@
       .project-icons {
         @include span-columns(3 of 6);
         position: absolute;
-        top:0;
+        bottom: 0;
         right: 0;
         height: 61px;
         padding-left: 4.5%;
         box-sizing: content-box;
         -moz-box-sizing: content-box;
+        z-index: 2;
 
         ul {
           li {
@@ -148,8 +149,12 @@
       }
 
       .project-icons {
-        @include span-columns(6 of 6);
+        @include span-columns(1 of 6);
         height: 69.5%;
+        left: 0;
+        top: 60px;
+        z-index: 2;
+        border-right: dotted 1px $orange;
 
         ul {
           li {
