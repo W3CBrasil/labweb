@@ -86,7 +86,7 @@ $(function() {
     shouldFetchPosts = false;
     isFetchingPosts = false;
 
-    $(".load_more").fadeOut();
+    $(".list-load-more").fadeOut();
     $(".infinite-spinner").fadeOut();
   }
 
