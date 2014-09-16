@@ -7,8 +7,8 @@
 
   <div class="project-info">
     <div class="project-type">
-      <img src="{% category_icon include.post.category, thumb_ %}">
-      <p>{{ include.post.category }}</p>
+      <img src="{% category_icon include.post.categories.first, thumb_ %}">
+      <p>{{ site.data.categories[include.post.categories.first] }}</p>
     </div>
     <div class="project-icons">
       <ul>
