@@ -1,0 +1,46 @@
+.see-also {
+  @include span-columns(12 of 12);
+  margin-top: 20px;
+  border-top: solid 2px $grey;
+
+  .title {
+    font-weight: 300;
+    font-size: 56px;
+    color: $grey;
+    margin: 30px 0;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      @include span-columns(3 of 12);
+      display: inline-block;
+      padding: 10px 0;
+      border-bottom: dashed 1px $orange;
+      color: $black;
+
+      &.omega {
+        @include omega;
+      }
+
+      .title {
+        font-size: 24px;
+        font-weight: normal;
+        color: $black;
+        margin: 15px 0;
+      }
+
+      p {
+        display: inline;
+        line-height: 14px;
+        font-size: 14px;
+      }
+
+      a {
+        color: $blue;
+        font-weight: bold;
+      }
+    }
+  }
+}
