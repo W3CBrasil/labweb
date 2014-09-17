@@ -9,7 +9,10 @@ authors: ["lionelmessi", "cristianoronaldo", "frankribery"]
 thumb: "project-1.png"
 technologies: "Ruby, Rails, Javascript"
 authors_tolltip: "Kent <br> Martin <br> Robert"
-github: "[acesse o github](https://github.com/codeminer42){:target=\"_blank\"}"
+github: https://www.github.com/codeminer42
+final_version: https://www.google.com
+status: Lançado em 08/05/2014
+raw_data: http://dados.rs.gov.br/
 ---
 
 ##Contextualização do projeto

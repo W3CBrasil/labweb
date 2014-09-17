@@ -8,7 +8,10 @@ description: "Descrição do projeto no thumbnail com mouse over consectetuer ad
 authors: ["lionelmessi", "frankribery"]
 technologies: "JSON, HTML, CSS, JavaScript"
 authors_tolltip: "Kent <br> Martin <br> Robert"
-github: "[acesse o github](https://github.com/codeminer42){:target=\"_blank\"}"
+github: https://www.github.com/codeminer42
+final_version: https://www.google.com
+status: Lançado em 08/05/2014
+raw_data: http://dados.rs.gov.br/
 ---
 
 

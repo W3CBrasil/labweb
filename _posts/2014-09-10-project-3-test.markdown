@@ -6,8 +6,11 @@ categories: visualization
 description: "Descrição do projeto no thumbnail com mouse over 3. [hiperlink](http://codeminer42.com){:target=\"_blank\"}"
 authors: ["frankribery"]
 technologies: "Ruby, Rails, Javascript"
-github: "[acesse o github](https://github.com/codeminer42){:target=\"_blank\"}"
 authors_tolltip: ""
+github: https://www.github.com/codeminer42
+final_version: https://www.google.com
+status: Lançado em 08/05/2014
+raw_data: http://dados.rs.gov.br/
 ---
 
 

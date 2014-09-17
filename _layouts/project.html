@@ -20,27 +20,52 @@
         <ul class="project-list-info">
           <li class="info category">
             <p class="type"><small>categoria</small><br>
-              visualização</p>
+              {{ page.categories }}</p>
           </li>
           <li class="info github">
             <p class="type"><small>acesse o repositório</small><br>
-              no GitHub</p>
+              {% if page.github %}
+                no <a href="{{ page.github }}" target=_blank>GitHub</a>
+              {% else %}
+                Não disponível
+              {% endif %}
+            </p>
           </li>
           <li class="info final-version">
             <p class="type"><small>versão final</small><br>
-              <a href="#">http://retratodaviolencia.org/</a></p>
+              {% if page.final_version %}
+                <a href="{{ page.final_version }}" target=_blank>{{ page.final_version }}</a>
+              {% else %}
+                Não disponível
+              {% endif %}
+            </p>
           </li>
           <li class="info source">
             <p class="type"><small>linguagens usadas</small><br>
-              JSON, HTML, CSS, JavaScript</p>
+              {% if page.technologies %}
+                {{ page.technologies }}
+              {% else %}
+                Não disponível
+              {% endif %}
+            </p>
           </li>
           <li class="info status">
             <p class="type"><small>status</small><br>
-              Lançado em xx/xx/xx</p>
+              {% if page.status %}
+                {{ page.status }}
+              {% else %}
+                Não disponível
+              {% endif %}
+            </p>
           </li>
           <li class="info datas">
             <p class="type"><small>dados brutos</small><br>
-              <a href="#">http://dados.rs.gov.br/dataset/violencia­contra­mulher­estupros</a></p>
+              {% if page.raw_data %}
+                <a href="{{ page.raw_data }}" target=_blank>{{ page.raw_data }}</a>
+              {% else %}
+                Não disponível
+              {% endif %}
+            </p>
           </li>
         </ul>
 
