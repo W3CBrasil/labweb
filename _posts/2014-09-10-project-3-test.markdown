@@ -7,8 +7,7 @@ description: "Descrição do projeto no thumbnail com mouse over 3. [hiperlink](
 authors: ["frankribery"]
 technologies: "Ruby, Rails, Javascript"
 authors_tolltip: ""
-github: "[acesse o github](https://github.com/codeminer42){:target=\"_blank\"}"
-github_url: https://www.github.com/codeminer42
+github: https://www.github.com/codeminer42
 final_version: https://www.google.com
 status: Lançado em 08/05/2014
 raw_data: http://dados.rs.gov.br/
