@@ -1,26 +1,27 @@
 ---
 layout: default
 title: projetos
-permalink: /experiment-projects/
+permalink: /projects/apps/
 ---
 
 <ul class="breadcrumb">
   <li><a href="/">home</a></li>
   <li>/</li>
-  <li>projetos</li>
+  <li><a href="/projects">projetos</a></li>
+  <li>/</li>
+  <li>apps</li>
 </ul>
-<div class="content projects">
 
-  <h2 class="title">Projetos</h2>
+<div class="content projects">
+  <h2 class="title">Apps</h2>
   {% include listing-mode.html %}
 
   <div class="posts" data-projects-wrapper>
-    {% for post in site.categories.experiment limit: 6 %}
+    {% for post in site.categories.app limit: 6 %}
       {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
       {% include project_data.html post=post %}
     {% endfor %}
   </div>
-
 </div>
 
 {% include load-more-projects.html %}

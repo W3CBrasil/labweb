@@ -9,8 +9,13 @@ permalink: /projects/
   <li>/</li>
   <li>projetos</li>
 </ul>
-<div class="content projects">
 
+filtrar por:
+<a href="/projects/experiments/">experimento</a>
+<a href="/projects/apps/">app</a>
+<a href="/projects/visualization/">visualização</a>
+
+<div class="content projects">
   <h2 class="title">Projetos</h2>
   {% include listing-mode.html %}
 
@@ -20,7 +25,6 @@ permalink: /projects/
       {% include project_data.html post=post %}
     {% endfor %}
   </div>
-
 </div>
 
 {% include load-more-projects.html %}
