@@ -1,0 +1,27 @@
+---
+layout: default
+title: projetos
+permalink: /projects/visualization/
+---
+
+<ul class="breadcrumb">
+  <li><a href="/">home</a></li>
+  <li>/</li>
+  <li><a href="/projects">projetos</a></li>
+  <li>/</li>
+  <li>visualização</li>
+</ul>
+
+<div class="content projects">
+  <h2 class="title">Visualização</h2>
+  {% include listing-mode.html %}
+
+  <div class="posts" data-projects-wrapper>
+    {% for post in site.categories.visualization limit: 6 %}
+      {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
+      {% include project_data.html post=post %}
+    {% endfor %}
+  </div>
+</div>
+
+{% include load-more-projects.html %}

@@ -9,22 +9,65 @@ permalink: /projects/
   <li>/</li>
   <li>projetos</li>
 </ul>
-<div class="content projects">
 
+<div class="content projects">
   <h2 class="title">Projetos</h2>
   {% include listing-mode.html %}
 
+  <div class="filters">
+    <span>filtrar por:</span>
+    <div class="wrapper">
+      <a href="/projects/experiments/">
+        <img src="/images/projects/categories/experiment-grey.png">
+        experimento
+      </a>
+      <ul class="list-category">
+        <li class="dashed"></li>
+        <li class="show-category">[+]</li>
+        <li class="dashed"></li>
+      </ul>
+      <p>
+        Breve descrição sobre a caregoria Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <a href="/projects/apps/">
+        <img src="/images/projects/categories/app-grey.png">
+        app
+      </a>
+      <ul class="list-category">
+        <li class="dashed"></li>
+        <li class="show-category">[+]</li>
+        <li class="dashed"></li>
+      </ul>
+      <p>
+        Breve descrição sobre a caregoria Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <a href="/projects/visualization/">
+        <img src="/images/projects/categories/visualization-grey.png">
+        visualização
+      </a>
+      <ul class="list-category">
+        <li class="dashed"></li>
+        <li class="show-category">[+]</li>
+        <li class="dashed"></li>
+      </ul>
+      <p>
+        Breve descrição sobre a caregoria Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+      </p>
+    </div>
+  </div>
+
   <div class="posts" data-projects-wrapper>
-    {% for post in site.posts limit: 6 %}
+    {% for post in site.posts limit: 2 %}
       {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
       {% include project_data.html post=post %}
     {% endfor %}
   </div>
-
 </div>
-<ul class="list-load-more">
-  <li class="dashed"></li>
-  <li><a class="load_more">[carregar mais resultados]</a></li>
-  <li class="dashed"></li>
-</ul>
-<div class="infinite-spinner"></div>
+
+{% include load-more-projects.html %}
