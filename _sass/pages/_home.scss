@@ -4,6 +4,10 @@
   height: 546px;
   margin-bottom: 50px;
 
+  @include media($bp-960) {
+    display: none;
+  }
+
   .highlight-controls {
     @include span-columns(1);
     @include shift(3);
@@ -63,6 +67,8 @@
 
 .content {
   &.home {
+
+    margin-top: 120px;
     header {
       position: relative;
 

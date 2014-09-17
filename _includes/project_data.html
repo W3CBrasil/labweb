@@ -5,8 +5,8 @@
     <img src="/images/projects-thumbs/project-default.png" class="project-image">
   {% endif %}
   <div class="project-description">
-    <h2>{{ include.post.title }}</h2>
-    <p>{{ include.post.description | markdownify }} <a href="{{include.post.url | prepend: site.baseurl}}">[...]</a></p>
+    <a class="title" href="{{include.post.url | prepend: site.baseurl}}">{{ include.post.title }}</a>
+    {{ include.post.description | markdownify }} <a href="{{include.post.url | prepend: site.baseurl}}">[...]</a>
   </div>
 
   <div class="project-info">
@@ -14,13 +14,13 @@
       <img src="{% category_icon include.post.categories.first, thumb_ %}">
       <p>{{ site.data.categories[include.post.categories.first] }}</p>
     </div>
-    <div class="project-icons">
-      <ul>
-        <li class="code tooltip" title="{{ include.post.technologies | markdownify }}"></li>
-        <li class="author tooltip" title="{{ include.post.authors_tolltip | markdownify }}"></li>
-        <li class="github tooltip" title='{{ include.post.github | markdownify }}'></li>
-      </ul>
-    </div>
+  </div>
+  <div class="project-icons">
+    <ul>
+      <li class="code tooltip" title="{{ include.post.technologies | markdownify }}"></li>
+      <li class="author tooltip" title="{{ include.post.authors_tolltip | markdownify }}"></li>
+      <li class="github tooltip" title='{{ include.post.github | markdownify }}'></li>
+    </ul>
   </div>
 </div>
 

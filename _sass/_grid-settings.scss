@@ -6,5 +6,5 @@ $max-width: em(960);
 // $visual_grid: true;
 $visual-grid-index: front;
 
-$tablet: new-breakpoint(max-width 768px 8);
-$mobile: new-breakpoint(max-width 480px 4);
+$bp-960: new-breakpoint(max-width 960px);
+$mobile: new-breakpoint(max-width 480px);
