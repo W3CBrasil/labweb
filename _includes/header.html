@@ -4,12 +4,23 @@
       <img src="/images/logo.png" class="logo">
     </a>
     <nav>
-      <ul>
+      <ul class="navigation-desktop">
         <li><a href="/projects">projetos</a></li>
         <li><a href="/about">sobre</a></li>
         <li><a href="/contribute">colabore</a></li>
         <li class="w3c"><a href="http://www.w3c.br/" target="_blank"></a></li>
       </ul>
+
+      <button class="open-menu" data-dropdown="#dropdown"></button>
+
+      <div id="dropdown" class="dropdown dropdown-tip dropdown-anchor-right">
+        <ul class="navigation-mobile dropdown-menu">
+          <li><a href="/projects">projetos</a></li>
+          <li><a href="/about">sobre</a></li>
+          <li><a href="/contribute">colabore</a></li>
+          <li><a href="http://www.w3c.br/" target="_blank">W3C Brasil</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>
