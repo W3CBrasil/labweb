@@ -10,14 +10,57 @@ permalink: /projects/
   <li>projetos</li>
 </ul>
 
-filtrar por:
-<a href="/projects/experiments/">experimento</a>
-<a href="/projects/apps/">app</a>
-<a href="/projects/visualization/">visualização</a>
-
 <div class="content projects">
   <h2 class="title">Projetos</h2>
   {% include listing-mode.html %}
+
+  <div class="filters">
+    <span>filtrar por:</span>
+    <div class="wrapper">
+      <a href="/projects/experiments/">
+        <img src="/images/projects/categories/experiment-grey.png">
+        experimento
+      </a>
+      <ul class="list-category">
+        <li class="dashed"></li>
+        <li class="show-category">[+]</li>
+        <li class="dashed"></li>
+      </ul>
+      <p>
+        Breve descrição sobre a caregoria Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <a href="/projects/apps/">
+        <img src="/images/projects/categories/app-grey.png">
+        app
+      </a>
+      <ul class="list-category">
+        <li class="dashed"></li>
+        <li class="show-category">[+]</li>
+        <li class="dashed"></li>
+      </ul>
+      <p>
+        Breve descrição sobre a caregoria Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <a href="/projects/visualization/">
+        <img src="/images/projects/categories/visualization-grey.png">
+        visualização
+      </a>
+      <ul class="list-category">
+        <li class="dashed"></li>
+        <li class="show-category">[+]</li>
+        <li class="dashed"></li>
+      </ul>
+      <p>
+        Breve descrição sobre a caregoria Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+      </p>
+    </div>
+  </div>
 
   <div class="posts" data-projects-wrapper>
     {% for post in site.posts limit: 2 %}

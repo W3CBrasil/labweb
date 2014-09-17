@@ -10,6 +10,68 @@
       margin-bottom: 30px;
     }
 
+    .filters {
+      @include span-columns(10 of 10);
+
+      span {
+        @include span-columns(1 of 10);
+      }
+
+      .wrapper {
+        @include span-columns(3 of 10);
+        text-align: center;
+        margin-bottom: 30px;
+
+        a {
+          font-size: 28px;
+          color: $grey;
+
+          img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 16px;
+          }
+        }
+
+        .list-category {
+          @include clearfix;
+          list-style: none;
+          clear: both;
+          margin-top: 8px;
+
+          li {
+            @include span-columns(2);
+            color: $grey;
+            display: inline-block;
+            vertical-align: middle;
+
+            &:last-child {
+              @include omega;
+            }
+
+            &.dashed{
+              @include span-columns(5);
+              margin-top: 7px;
+              border-top: 1px dashed;
+            }
+
+            &.show-category {
+              font-family: "LatoLight";
+              font-size: 12px;
+              color: $blue;
+              cursor: pointer;
+            }
+          }
+        }
+
+        p {
+          font-family: "LatoRegular";
+          font-size: 14px;
+          margin-top: 8px;
+        }
+      }
+    }
   }
 }
 
