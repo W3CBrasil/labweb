@@ -43,6 +43,14 @@
     color: $blue;
     font-family: 'AdventProSemibold';
     font-size: 40px;
+    position: relative;
+    padding-left: 45px;
+
+    .highlight-image {
+      position: absolute;
+      top: 18px;
+      left: 10px;
+    }
   }
 
   .highlight-description {

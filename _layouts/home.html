@@ -11,7 +11,6 @@
       <div class="container">
         <div class="highlight-controls">
           <div class="highlight-icon">
-            <img src="/images/projects/experiment-blue.png">
           </div>
 
           <div class="highlight-arrow" data-navigation="prev">
@@ -29,6 +28,7 @@
               <li>
                 <div class="highlight-title">
                   {{ post.title }}
+                  <img class="highlight-image" src="{% category_icon post.categories.first %}">
                 </div>
 
                 <div class="highlight-description">
