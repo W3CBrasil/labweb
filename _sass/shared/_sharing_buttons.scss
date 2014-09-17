@@ -23,4 +23,28 @@
       text-align: right;
     }
   }
+
+  @include media($mobile) {
+    .buttons,
+    .title {
+      text-align: center;
+      @include span-columns(12 of 12);
+      @include shift(0);
+      @include omega;
+    }
+
+    .buttons {
+      li {
+        @include span-columns(3 of 12);
+
+        &.first {
+          @include shift(1);
+        }
+
+        div, iframe {
+          max-width: 78px;
+        }
+      }
+    }
+  }
 }
