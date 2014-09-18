@@ -32,6 +32,64 @@ $ jekyll serve -w
 
 Isto irá iniciar um servidor local na porta 4000. Para acessar site, basta abrir o seu navegador de preferência e ir até o endereço: `http://localhost:4000`.
 
+### Criando projetos
+
+O Jekyll funciona como uma espécie de blog, em que você pode escrever novos posts utilizando [Markdown](https://help.github.com/articles/markdown-basics). Uma vez que um post foi escrito, ele fica disponível no site e pode ser acessado. A atual estrutura faz com que cada _post_ escrito seja um projeto, com autores, categoria e outras configurações.
+
+Para criar um novo projeto, primeiramente é necessário criar um arquivo novo dentro da pasta `_posts`. Este arquivo deve, preferencialmente, conter o seguinte estrutura no seu nome: `ano-mes-dia-titulo-do-projeto.markdown`. Por exemplo:
+
+`2014-05-08-projeto-exemplo.markdown`
+
+Com o arquivo do projeto criado, é necessário definir quais são as suas prioridade. Para isso, deve-se preencher os atributos do projeto:
+
+* **layout**: project _(layout da página de projeto, deixar "project")_
+* **title**:  Projeto exemplo  _(título do projeto)_
+* **subtitle**: Subtítulo do projeto _(subtítulo do projeto)_
+* **date**: 2014-09-05 17:49:49 _(data de criação do projeto no formato aaaa-mm-dd hh:mm:ss)_
+* **categories**: app _(categoria do projeto, podendo ser app, experiment ou visualization)_
+* **description**: Descrição do projeto que será exibida na listagem de projetos e no cabeçalho de detalhamento do projeto. Aqui, caso necessário, é permitido usar markdown
+* **authors**: ["matias", "lucas", "vinicius"] _(lista com os autores envolvidos no projeto, mais informações na seção abaixo, é necessário deixar a listagem na mesma estrutura apresentada neste exemplo)_
+* **thumb**: projecto-exemplo.png _(imagem da listagem do projeto, o sistema irá procurar uma imagem com este nome dentro de images/project-thumbs/)_
+* **technologies**: Ruby, Rails, Javascript _(tecnologias utilizadas no projeto)_
+* **authors_tolltip**: Kent \<br> Martin \<br> Robert _(nome dos autores que serão exibidos quando o mouse passar por cima do ícone de autores na listagem, separar os autores com a tag \<br> para quebra de linha)_
+* **github**: https://www.github.com/codeminer42 _(endereço github do projeto)_
+* **final_version**: https://www.google.com _(endereço da versão final do projeto)_
+* **status**: Lançado em 08/05/2014 _(status do projeto)_
+* **raw_data**: http://dados.rs.gov.br/ _(endereço dos dados utilizados pelo projeto)_
+
+Estas variáveis precisam ser definidas dentro do escopo do [Front Matter](http://jekyllrb.com/docs/frontmatter/), no cabeçalho do arquivo de projeto:
+
+```
+---
+variavel: valor
+---
+```
+
+Exemplo de arquivo de projeto:
+
+```
+---
+layout: project
+title: Projeto Exemplo
+subtitle: Subtítulo do projeto
+date: 2014-09-05 17:49:49
+categories: app
+description: Descrição do projeto no thumbnail (...)
+authors: ["lionelmessi", "cristianoronaldo", "frankribery"]
+thumb: project-1.png
+technologies: Ruby, Rails, Javascript
+authors_tolltip: Kent <br> Martin <br> Robert
+github: https://www.github.com/codeminer42
+final_version: https://www.google.com
+status: Lançado em 08/05/2014
+raw_data: http://dados.rs.gov.br/
+---
+
+## Projecto Exemplo
+
+O escritório do W3C no Brasil, em parceria com o Governo do Estado do Rio Grande do Sul (...)
+```
+
 ## Staging
 
   http://mighty-lake-7649.herokuapp.com/
