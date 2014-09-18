@@ -12,6 +12,7 @@ github: https://www.github.com/codeminer42
 final_version: https://www.google.com
 status: Lançado em 08/05/2014
 raw_data: http://dados.rs.gov.br/
+background: "bg-highlight.png"
 ---
 
 
