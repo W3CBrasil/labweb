@@ -90,6 +90,42 @@ raw_data: http://dados.rs.gov.br/
 O escritório do W3C no Brasil, em parceria com o Governo do Estado do Rio Grande do Sul (...)
 ```
 
+### Autores
+
+Os autores de cada projeto precisam ser lançados dentro do arquivo `_data/authors.yml`. Uma vez que eles estiverem cadastrados neste arquivo, suas referências podem ser utilizadas dentro dos projetos.
+
+Este arquivo possui uma estrutura específica que precisa ser respeitada para que funcione corretamente. Segue um exemplo contendo dois autores:
+
+```yml
+matiasleidemer:
+  name: Matias Leidemer
+  email: matiasleidemer@servidor.com
+  site: http://leidemer.com
+  avatar: https://avatars1.githubusercontent.com/u/10559?v=2&s=460
+lucasrenan:
+  name: Lucas Renan
+  email: lucasrenan@servidor.com
+  site: http://lucasrenan.com
+  avatar: https://avatars3.githubusercontent.com/u/114986?v=2&s=460
+```
+
+As configurações são as seguintes:
+
+* **name**: Matias Leidemer _(nome do autor)_
+* **email**: matiasleidemer@servidor.com _(email de contato do autor)_
+* **site**: http://leidemer.com _(site do autor)_
+* **avatar**: https://avatars1.githubusercontent.com/u/10559?v=2&s=460 _(endereço da foto do autor)_
+
+É importante observar a indentação do arquivo. Ela deverá ser respeitada para que o arquivo funcione corretamente. 
+
+Uma vez cadastrados, os autores poderão ser referenciados dentro dos projetos através das suas identificações (neste exemplo `matiasleidemer` e `lucasrenan`):
+
+```
+---
+authors: ["matiasleidemer", "lucasrenan"]
+---
+```
+
 ## Staging
 
   http://mighty-lake-7649.herokuapp.com/
