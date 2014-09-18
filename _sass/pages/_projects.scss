@@ -17,6 +17,10 @@
         @include span-columns(1 of 10);
       }
 
+      p.description {
+        visibility: hidden;
+      }
+
       .wrapper {
         @include span-columns(3 of 10);
         text-align: center;
