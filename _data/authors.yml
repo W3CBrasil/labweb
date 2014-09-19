@@ -1,15 +1,43 @@
-lionelmessi:
-  name: "Lionel Messi"
-  email: "lionel@messi.net"
-  site: "http://google.com"
-  avatar: "http://i.forbesimg.com/media/lists/people/lionel-messi_416x416.jpg"
-cristianoronaldo:
-  name: "Cristiano Ronaldo"
-  email: "cristiano@ronaldo.com"
-  site: "http://google.com"
-  avatar: "http://purelyfootball.com/wp-content/uploads/2014/06/cristiano-ronaldo.jpg"
-frankribery:
-  name: "Frank Ribery"
-  email: "frank@ribery.com"
-  site: "http://google.com"
-  avatar: "http://isportsweb.com/wp-content/uploads//2014/06/Ribery.jpg"
+# autores dos projetos 1 e 2
+vitor_baptista:
+  name: "Vitor Baptista"
+  email: "vitor@vitorbaptista.com"
+  site: "http://github.com/vitorbaptista"
+  avatar: "https://avatars0.githubusercontent.com/u/76945?v=2&s=400"
+leonardo_tartari:
+  name: "Leonardo Tartari"
+  email: "ltartari@gmail.com"
+  site: "http://github.com/ltartari"
+  avatar: "https://avatars1.githubusercontent.com/u/114248?v=2&s=400"
+thiago_bueno:
+  name: "Thiago Bueno"
+  email: "tbueno@gmail.com"
+  site: "http://github.com/tbueno"
+  avatar: "https://avatars3.githubusercontent.com/u/7570?v=2&s=400"
+  #autores do projeto 3
+luiz_volso:
+  name: "Luiz Henrique Volso"
+  email: "lhvolso@gmail.com"
+  site: "http://github.com/lhvolso"
+  avatar: "https://avatars2.githubusercontent.com/u/1645541?v=2&s=400"
+adriano_alves:
+  name: "Adriano Alves de Lima"
+  email: "adriano@adrianoalima.com"
+  site: "http://github.com/adrianoalima"
+  avatar: "https://avatars1.githubusercontent.com/u/4037329?v=2&s=400"
+marcos_russ:
+  name: "Marcos Huss"
+  email: "huss@idagencia.com.br"
+  site: "https://twitter.com/marcoshuss"
+  avatar: "https://pbs.twimg.com/profile_images/910823591/huss_01_400x400.jpg"
+daniel_ishigaki:
+  name: "Daniel Ishigaki"
+  email: "danielvichi@gmail.com"
+  site: "https://www.behance.net/danielvichi"
+  avatar: "https://mir-cdn.behance.net/v1/rendition/user/138/1730939.53b5e5e56aae1.jpg"
+thiago_takeshi:
+  name: "Thiago Takeshi Francisquini"
+  email: "thiagotakeshi@yahoo.com.br"
+  site: "https://www.linkedin.com/in/thiagotakeshi"
+  avatar: "https://www.linkedin.com/mpr/pub/image-1IA-bP5sDz2QwJe85DTtSfV2lVrmsotno7anw3JSl6xsa5Oq1IAnYTqslyQUYIWLNMru/thiago-takeshi-francisquini.jpg"
+

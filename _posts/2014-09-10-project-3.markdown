@@ -5,7 +5,7 @@ subtitle: "Um serviço de busca e visualização intuitiva para que os cidadãos
 date:   2014-09-10 17:49:49
 categories: app
 description: "O projeto possibilita que as queixas feitas às empresas sejam filtradas pelo gênero dos consumidores e pelo estado de atendimento das reclamações pelo fornecedor. Com apenas um clique no gráfico ou no texto é possível ativar o filtro, que mostrará os gráficos correspondentes à porcentagem total de reclamações."
-authors: ["frankribery"]
+authors: ["luiz_volso, adriano_alves, marcos_russ, daniel_ishigaki, thiago_takeshi"]
 technologies: "Ruby, Rails, Javascript"
 authors_tolltip: ""
 github: https://github.com/lhvolso/ReclamacoesProcon
@@ -21,7 +21,9 @@ O [Reclamações Procon](http://www.reclamacoesprocon.com.br/) é um dos projeto
 
 Os [dados](http://dados.gov.br/dataset/cadastro-nacional-de-reclamacoes-fundamentadas-procons-sindec) foram disponibilizados pelo Cadastro Nacional de Reclamações Fundamentadas de 2011 realizado pelos 26 Procons estaduais e 232 Procons municipais, que por sua vez estão integrados ao Sistema Nacional de Informações de Defesa do Consumidor, o Sindec. 
 
-Frente a 32 equipes inscritas no concurso, o Reclamações Procon conquistou o 2º lugar no pódio junto com o projeto [Reclamações Br](). Em primeiro lugar ficou o aplicativo [Reputação S/A](), em terceiro e quarto lugares ficaram, respectivamente, as aplicações [ProAnálise]() e [Proconfie](). 
+Frente a 32 equipes inscritas no concurso, o Reclamações Procon conquistou o 2º lugar no pódio junto com o projeto [Reclamações Br](http://reclamacoes-br.herokuapp.com/#/). Em primeiro lugar ficou o aplicativo [Reputação S/A](http://reputacao-sa.org/), em terceiro e quarto lugares ficaram, respectivamente, as aplicações [ProAnálise](http://www.proanalise.co.nf/) e [Proconfie](http://proconfie.vod.dcc.ufmg.br/). 
+
+
 
 
 
