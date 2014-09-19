@@ -10,9 +10,6 @@
     <section class="highlights">
       <div class="container">
         <div class="highlight-controls">
-          <div class="highlight-icon">
-          </div>
-
           <div class="highlight-arrow" data-navigation="prev">
             <img src="/images/arrow-left.png">
           </div>
@@ -29,7 +26,7 @@
                 <div class="highlight-title">
                   <a href="{{ post.url }}">
                     {{ post.title }}
-                    <img class="highlight-image" src="{% category_icon post.categories.first %}">
+                    <img class="highlight-image" src="{% category_icon post.categories.first, blue %}">
                   </a>
                 </div>
 

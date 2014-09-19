@@ -6,7 +6,7 @@ module Jekyll
       split = options.split
 
       @category = split[0]
-      @prepend = split[1]
+      @color = split[1]
     end
 
     def render(context)
@@ -20,7 +20,7 @@ module Jekyll
     end
 
     def icon(category)
-      [@prepend, "cat_", category.downcase[0, 3]].join
+      [category, "-", @color].join
     end
   end
 end
