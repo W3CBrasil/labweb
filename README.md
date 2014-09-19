@@ -40,7 +40,7 @@ Para criar um novo projeto, primeiramente é necessário criar um arquivo novo d
 
 `2014-05-08-projeto-exemplo.markdown`
 
-Com o arquivo do projeto criado, é necessário definir quais são as suas prioridade. Para isso, deve-se preencher os atributos do projeto:
+Com o arquivo do projeto criado, é necessário definir quais são as suas propriedades. Para isso, deve-se preencher os atributos do projeto:
 
 * **layout**: project _(layout da página de projeto, deixar "project")_
 * **title**:  Projeto exemplo  _(título do projeto)_
@@ -55,7 +55,9 @@ Com o arquivo do projeto criado, é necessário definir quais são as suas prior
 * **github**: https://www.github.com/codeminer42 _(endereço github do projeto)_
 * **final_version**: https://www.google.com _(endereço da versão final do projeto)_
 * **status**: Lançado em 08/05/2014 _(status do projeto)_
-* **raw_data**: http://dados.rs.gov.br/ _(endereço dos dados utilizados pelo projeto)_
+* **raw_data**: http://dados.rs.gov.br/ _(endereço dos dados utilizados pelo projeto)
+* **background**: "bg-highlight.png" _(imagem de background que é exibida na página do projeto. a imagem deve ficar em '/images/projects/backgrounds/bg-highlight.png')
+_
 
 Estas variáveis precisam ser definidas dentro do escopo do [Front Matter](http://jekyllrb.com/docs/frontmatter/), no cabeçalho do arquivo de projeto:
 
@@ -83,6 +85,7 @@ github: https://www.github.com/codeminer42
 final_version: https://www.google.com
 status: Lançado em 08/05/2014
 raw_data: http://dados.rs.gov.br/
+background: "bg-highlight.png"
 ---
 
 ## Projecto Exemplo
@@ -116,7 +119,7 @@ As configurações são as seguintes:
 * **site**: http://leidemer.com _(site do autor)_
 * **avatar**: https://avatars1.githubusercontent.com/u/10559?v=2&s=460 _(endereço da foto do autor)_
 
-É importante observar a indentação do arquivo. Ela deverá ser respeitada para que o arquivo funcione corretamente. 
+É importante observar a indentação do arquivo. Ela deverá ser respeitada para que o arquivo funcione corretamente.
 
 Uma vez cadastrados, os autores poderão ser referenciados dentro dos projetos através das suas identificações (neste exemplo `matiasleidemer` e `lucasrenan`):
 
