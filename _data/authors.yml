@@ -1,15 +1,128 @@
-lionelmessi:
-  name: "Lionel Messi"
-  email: "lionel@messi.net"
-  site: "http://google.com"
-  avatar: "http://i.forbesimg.com/media/lists/people/lionel-messi_416x416.jpg"
-cristianoronaldo:
-  name: "Cristiano Ronaldo"
-  email: "cristiano@ronaldo.com"
-  site: "http://google.com"
-  avatar: "http://purelyfootball.com/wp-content/uploads/2014/06/cristiano-ronaldo.jpg"
-frankribery:
-  name: "Frank Ribery"
-  email: "frank@ribery.com"
-  site: "http://google.com"
-  avatar: "http://isportsweb.com/wp-content/uploads//2014/06/Ribery.jpg"
+# autores dos projetos 1 e 2
+vitor_baptista:
+  name: "Vitor Baptista"
+  email: "vitor@vitorbaptista.com"
+  site: "http://github.com/vitorbaptista"
+  avatar: "https://avatars0.githubusercontent.com/u/76945?v=2&s=400"
+leonardo_tartari:
+  name: "Leonardo Tartari"
+  email: "ltartari@gmail.com"
+  site: "http://github.com/ltartari"
+  avatar: "https://avatars1.githubusercontent.com/u/114248?v=2&s=400"
+thiago_bueno:
+  name: "Thiago Bueno"
+  email: "tbueno@gmail.com"
+  site: "http://github.com/tbueno"
+  avatar: "https://avatars3.githubusercontent.com/u/7570?v=2&s=400"
+  #autores do projeto 3
+luiz_volso:
+  name: "Luiz Henrique Volso"
+  email: "lhvolso@gmail.com"
+  site: "http://github.com/lhvolso"
+  avatar: "https://avatars2.githubusercontent.com/u/1645541?v=2&s=400"
+adriano_alves:
+  name: "Adriano Alves de Lima"
+  email: "adriano@adrianoalima.com"
+  site: "http://github.com/adrianoalima"
+  avatar: "https://avatars1.githubusercontent.com/u/4037329?v=2&s=400"
+marcos_russ:
+  name: "Marcos Huss"
+  email: "huss@idagencia.com.br"
+  site: "https://twitter.com/marcoshuss"
+  avatar: "https://pbs.twimg.com/profile_images/910823591/huss_01_400x400.jpg"
+daniel_ishigaki:
+  name: "Daniel Ishigaki"
+  email: "danielvichi@gmail.com"
+  site: "https://www.behance.net/danielvichi"
+  avatar: "https://mir-cdn.behance.net/v1/rendition/user/138/1730939.53b5e5e56aae1.jpg"
+thiago_takeshi:
+  name: "Thiago Takeshi Francisquini"
+  email: "thiagotakeshi@yahoo.com.br"
+  site: "https://www.linkedin.com/in/thiagotakeshi"
+  avatar: "https://www.linkedin.com/mpr/pub/image-1IA-bP5sDz2QwJe85DTtSfV2lVrmsotno7anw3JSl6xsa5Oq1IAnYTqslyQUYIWLNMru/thiago-takeshi-francisquini.jpg"
+#autores do projeto 4
+jesse_filho:
+  name: "Jessé Ferreira Filho"
+  email: "jfnf@cin.ufpe.br"
+  site: "https://github.com/jessefilho"
+  avatar: "https://avatars2.githubusercontent.com/u/2954005?v=2&s=460"
+gloria_lima:
+  name: "Gloria de Fatima Andrade Barros Lima"
+  email: "gfabl@cin.ufpe.br"
+  site: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4018890H8"
+  avatar: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4018890H8"
+alberto_tavares: 
+  name: "Alberto Trindade Tavares"
+  email: "att@cin.ufpe.br"
+  site: "https://www.linkedin.com/in/albertotavares"
+  avatar:"https://www.linkedin.com/mpr/pub/image-uGZOHRDnrtmiKQRq4ePrMnDq2e55FiVg3AkrQCwn26MVjEOT3GZrQUmdRyuVlOeESE3/alberto-trindade-tavares.jpg"
+jonatas_lira:
+  name: "Jonatas de Lira Rocha"
+  email: "jlr@cin.ufpe.br"
+  site: "https://www.facebook.com/jonataslr"
+  avatar: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p148x148/10269396_737586612938434_7783428359185693692_n.jpg?oh=462f75f743886f9e2189b99cfbe51c16&oe=549370AD&__gda__=1422372368_794c4a0b4f56a3168951a51bfcbc010f"
+#autores do projeto 5
+joel_silva:
+  name: "Joel da Silva"
+  email: "joeldasilva@gmail.com"
+  site: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4707374J7"
+  avatar: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4707374J7"
+vinicius_immich:
+  name: "Vinicius Bisognin Immich"
+  email: "vinibiso@gmail.com"
+  site: "https://github.com/vinibiso"
+  avatar: "https://avatars2.githubusercontent.com/u/1559421?v=2&s=460"
+paulo_henrique:
+  name: "Paulo Henrique Vianna"
+  email: "paulo.vianna@ufsm.br"
+  site: "https://github.com/paulovianna"
+  avatar: "https://avatars1.githubusercontent.com/u/1006581?v=2&s=460"
+augusto_folleto: 
+  name: "Antônio Augusto Foletto"
+  email: "gutofoletto@gmail.com"
+  site: "https://github.com/gutofoletto"
+  avatar: "https://avatars2.githubusercontent.com/u/1004681?v=2&s=460"
+augusto_lazzaroto: 
+  name: "Augusto Lazzarotto de Lima"
+  email: "gumarotto@gmail.com"
+  site: "https://github.com/augustolima"
+  avatar: "https://avatars1.githubusercontent.com/u/2763154?v=2&s=460"
+#autores do projeto 6
+ricardo_cavalcanti:
+  name: "Ricardo Cavalcanti"
+  email: "rcaval@thoughtworks.com"
+  site: "https://github.com/rcaval"
+  avatar: "https://avatars2.githubusercontent.com/u/1876988?v=2&s=460"
+rafael_oliveira: 
+  name: "Rafael Oliveira"
+  email: "roliveira@thoughtworks.com"
+  site: "https://github.com/ludug3r0"
+  avatar: "https://avatars0.githubusercontent.com/u/47824?v=2&s=460"
+gislene_pereira:
+  name: "Gislene Pereira"
+  site: "https://github.com/pereiragislene"
+  email: "gpereir@thoughtworks.com"
+  avatar: "https://avatars0.githubusercontent.com/u/554552?v=2&s=460"
+rafael_garcia:
+  name: "Rafael Garcia"
+  site: "https://github.com/rafbgarcia"
+  email: "rbgarcia@thoughtworks.com"
+  avatar: "https://avatars0.githubusercontent.com/u/1904314?v=2&s=460"
+johan_arispe: 
+  name: "Johann Arispe"
+  site: "https://github.com/johannarispe"
+  email: "jarispe@thoughtworks.com"
+  avatar: "https://avatars0.githubusercontent.com/u/1278692?v=2&s=460"
+paolo_carrasco:
+  name: "Paolo Carrasco"
+  site: "https://github.com/paolocarrasco"
+  email: "pcarrasco@thoughtworks.com"
+  avatar: "https://avatars3.githubusercontent.com/u/1524522?v=2&s=460"
+
+
+
+
+
+
+
+
