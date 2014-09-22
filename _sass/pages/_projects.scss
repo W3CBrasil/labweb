@@ -74,6 +74,40 @@
         }
       }
     }
+
+    @include media($mobile) {
+      margin-top: 26px;
+
+      .title {
+        @include span-columns(12);
+        margin-bottom: 20px;
+      }
+
+      .filters {
+        @include span-columns(12);
+
+        span {
+          @include span-columns(12);
+          margin-bottom: 20px;
+        }
+
+        .wrapper {
+          @include span-columns(4);
+
+          a {
+            font-size: 20px;
+          }
+
+          .list-category {
+            display: none;
+          }
+
+          p {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -87,14 +121,25 @@
     color: $grey;
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
 
     &:last-child {
       @include omega;
     }
 
-    &.dashed{
+    &.dashed {
       margin-top: 20px;
       border-top: 1px dashed;
+    }
+  }
+
+  @include media($mobile) {
+    li {
+      @include span-columns(10);
+
+      &.dashed {
+        @include span-columns(1);
+      }
     }
   }
 }
@@ -105,5 +150,9 @@
   &:hover {
     color: $blue;
     cursor: pointer;
+  }
+
+  @include media($mobile) {
+    font-size: 26px;
   }
 }
