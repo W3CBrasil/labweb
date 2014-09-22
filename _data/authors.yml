@@ -51,11 +51,11 @@ gloria_lima:
   email: "gfabl@cin.ufpe.br"
   site: "http://buscatextual.cnpq.br/buscatextual/visualizacv.do?metodo=apresentar&id=K4018890H8"
   avatar: "http://servicosweb.cnpq.br/wspessoa/servletrecuperafoto?tipo=1&id=K4018890H8"
-alberto_tavares: 
+alberto_tavares:
   name: "Alberto Trindade Tavares"
   email: "att@cin.ufpe.br"
   site: "https://www.linkedin.com/in/albertotavares"
-  avatar:"https://www.linkedin.com/mpr/pub/image-uGZOHRDnrtmiKQRq4ePrMnDq2e55FiVg3AkrQCwn26MVjEOT3GZrQUmdRyuVlOeESE3/alberto-trindade-tavares.jpg"
+  avatar: "https://www.linkedin.com/mpr/pub/image-uGZOHRDnrtmiKQRq4ePrMnDq2e55FiVg3AkrQCwn26MVjEOT3GZrQUmdRyuVlOeESE3/alberto-trindade-tavares.jpg"
 jonatas_lira:
   name: "Jonatas de Lira Rocha"
   email: "jlr@cin.ufpe.br"
@@ -77,12 +77,12 @@ paulo_henrique:
   email: "paulo.vianna@ufsm.br"
   site: "https://github.com/paulovianna"
   avatar: "https://avatars1.githubusercontent.com/u/1006581?v=2&s=460"
-augusto_folleto: 
+augusto_folleto:
   name: "Antônio Augusto Foletto"
   email: "gutofoletto@gmail.com"
   site: "https://github.com/gutofoletto"
   avatar: "https://avatars2.githubusercontent.com/u/1004681?v=2&s=460"
-augusto_lazzaroto: 
+augusto_lazzaroto:
   name: "Augusto Lazzarotto de Lima"
   email: "gumarotto@gmail.com"
   site: "https://github.com/augustolima"
@@ -93,7 +93,7 @@ ricardo_cavalcanti:
   email: "rcaval@thoughtworks.com"
   site: "https://github.com/rcaval"
   avatar: "https://avatars2.githubusercontent.com/u/1876988?v=2&s=460"
-rafael_oliveira: 
+rafael_oliveira:
   name: "Rafael Oliveira"
   email: "roliveira@thoughtworks.com"
   site: "https://github.com/ludug3r0"
@@ -108,7 +108,7 @@ rafael_garcia:
   site: "https://github.com/rafbgarcia"
   email: "rbgarcia@thoughtworks.com"
   avatar: "https://avatars0.githubusercontent.com/u/1904314?v=2&s=460"
-johan_arispe: 
+johan_arispe:
   name: "Johann Arispe"
   site: "https://github.com/johannarispe"
   email: "jarispe@thoughtworks.com"
