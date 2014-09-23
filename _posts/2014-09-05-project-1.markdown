@@ -4,7 +4,7 @@ title:  "Retratos da Violência"
 subtitle: "Um retrato da violência contra a mulher usando dados abertos"
 date:   2014-09-05 17:49:49
 categories: visualization
-description: "Visualização utilizada para desenhar um retrato da violência contra a mulher no Rio Grande do Sul utilizando Dados Abertos do Governo.[Repositório aqui.](https://github.com/dataviz/retrato-da-violencia.org)"
+description: "Visualização utilizada para desenhar um retrato da violência contra a mulher no Rio Grande do Sul utilizando Dados Abertos do Governo. [Repositório aqui.](https://github.com/dataviz/retrato-da-violencia.org)"
 authors: ["vitor_baptista", "leonardo_tartari", "thiago_bueno"]
 thumb: "project-1.png"
 technologies: "Ruby, JSON, Javascript, HTML, Css"
