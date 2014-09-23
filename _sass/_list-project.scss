@@ -23,6 +23,7 @@
         font-size: 26px;
         color: $black;
         margin: 10px 0;
+        font-family: 'AdventProRegular';
       }
 
       a {
@@ -42,7 +43,6 @@
     }
 
     .project-icons {
-      background: $white;
       ul {
         list-style: none;
 
@@ -111,6 +111,7 @@
       .project-icons {
         @include span-columns(3 of 6);
         position: absolute;
+        background: $white;
         bottom: 0;
         right: 0;
         height: 61px;
@@ -128,8 +129,8 @@
         }
       }
 
-      @include media($bp-960) {
-        height: 160px;
+      @include media($mobile) {
+        height: 98px;
 
         .project-image {
           display: none;
@@ -146,7 +147,7 @@
 
           .title {
             display: block;
-            font-size: 26px;
+            font-size: 24px;
             color: $black;
             margin: 10px 0;
           }
@@ -155,38 +156,23 @@
         .project-info {
           @include span-columns(2 of 6);
           top: 0;
-          height: 158px;
+          height: 96px;
           border: none;
           text-align: center;
 
           img {
-            margin: 50px 0 0 0;
+            margin: 20px 0 10px 0;
           }
 
           p {
             display: block;
             margin: 0;
+            line-height: 14px;
           }
         }
 
         .project-icons {
-          @include span-columns(4 of 6);
-          @include shift(2 of 6);
-          @include omega;
-          border-top: dashed 1px $black;
-
-          ul li {
-            margin: 20px 30px !important;
-          }
-        }
-      }
-      @include media($mobile) {
-        .project-icons {
-          ul {
-            li {
-              margin: 20px 25px !important;
-            }
-          }
+          display: none;
         }
       }
     }
@@ -218,12 +204,11 @@
       }
 
       .project-icons {
-        @include span-columns(1 of 6);
+        @include span-columns(6 of 6);
         height: 69.5%;
         left: 0;
         top: 60px;
         z-index: 2;
-        border-right: dotted 1px $orange;
 
         ul {
           li {
