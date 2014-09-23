@@ -17,6 +17,7 @@
 
     .project-description {
       color: $black;
+      overflow: hidden;
 
       .title {
         @include span-columns(6 of 6);
@@ -88,6 +89,7 @@
 
       .project-description {
         @include omega;
+        max-height: 288px;
       }
 
       .project-info {
