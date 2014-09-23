@@ -1,19 +1,19 @@
 ---
 layout: project
-title:  <%= title %>
-subtitle: <%= subtitle %>
-date:   <%= Time.new.strftime("%Y-%m-%d %H:%M:%S") %>
-categories: <%= category %>
-description: <%= description %>
-authors: <%= author %>
-thumb: <%= thumb %>
-technologies: <%= technologies %>
-authors_tolltip: <%= authors_tolltip %>
-github: <%= github %>
-final_version: <%= final_version %>
-status: <%= status %>
-raw_data: <%= raw_data %>
-background: <%= background %>
+title:  <%= options[:title] %>
+subtitle: <%= options[:subtitle] %>
+date: <%= Time.new.strftime("%Y-%m-%d %H:%M:%S") %>
+categories: <%= options[:category] %>
+description: <%= options[:description] %>
+authors: <%= options[:authors] %>
+thumb: <%= options[:thumb] %>
+technologies: <%= options[:technologies] %>
+authors_tolltip: <%= options[:authors_tolltip] %>
+github: <%= options[:github] %>
+final_version: <%= options[:final_version] %>
+status: <%= options[:status] %>
+raw_data: <%= options[:raw_data] %>
+background: <%= options[:background] %>
 ---
 
 This is just a sample. You can play around with your own text right here.
