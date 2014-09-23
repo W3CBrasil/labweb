@@ -129,6 +129,27 @@ authors: ["matiasleidemer", "lucasrenan"]
 ---
 ```
 
+### Gerador de projetos
+
+É possível utilizar um gerador de projetos para agilizar o processo. Para isso, basta rodar o seguinte comando dentro da pasta do projeto:
+
+```bash
+$ thor project:generate "Projeto de exemplo"
+```
+
+O comando irá gerar um arquivo dentro da pasta `_posts` com o título e a data automaticamente preenchidos. O exemplo acima geraria o arquivo `_posts/2014-09-23-projeto-de-exemplo.markdown`.
+
+Este gerator possui, ainda, outra opções. Para uma lista completa das opções, basta rodar `thor --help project:generate`.
+
+Outro exemplo com o gerador, agora utilizando algumas opções disponíveis:
+
+```bash
+$ thor project:generate "Projeto Teste" --category="app" --technologies="Ruby, C, Obj-C"
+```
+
+Aqui será gerado o arquivo de Projeto Teste com a categoria setada para `app` e com as tecnologias setadas para `Ruby, C, Obj-C`.
+
+
 ## Staging
 
   http://mighty-lake-7649.herokuapp.com/
