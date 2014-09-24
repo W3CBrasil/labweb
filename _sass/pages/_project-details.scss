@@ -1,3 +1,43 @@
+.project-infos {
+  position: relative;
+  color: $white;
+
+  .title,
+  .subtitle {
+    position: absolute;
+    left: 18%;
+    font-weight: 300;
+  }
+
+  .title {
+    top: 30%;
+    font-size: 56px;
+  }
+
+  .subtitle {
+    top: 45%;
+    width: 70%;
+    font-size: 36px;
+  }
+
+  .project-image {
+    width: 100%;
+    max-height: 600px;
+  }
+
+  @include media($mobile) {
+    .title {
+      top: 32%;
+      left: 2%;
+      font-size: 46px;
+    }
+
+    .subtitle {
+      display: none;
+    }
+  }
+}
+
 .content {
   &.project-details {
     @include span-columns(10);
@@ -44,39 +84,42 @@
       border-bottom: dashed 1px $grey;
 
       .info {
-        @include span-columns(4 of 10);
+        @include span-columns(5 of 10);
         margin-top: 5px;
         margin-bottom: 5px;
-
-        &:nth-child(odd) {
-          @include shift(1);
-        }
+        min-height: 65px;
 
         &:nth-child(even) {
           @include omega;
         }
 
         .type {
+          @include span-columns(4 of 5);
+          max-width: 75%;
           display: inline-block;
           vertical-align: super;
           text-align: left;
-          max-width: 75%;
+          word-wrap: break-word;
         }
 
         &:before {
+          @include span-columns(1 of 6);
           content: "";
           display: inline-block;
           height: 59px;
           width: 59px;
           border-radius: 50%;
           border: solid 3px $white;
+          background-repeat: no-repeat;
+          float: left;
         }
 
         &.authors {
           margin-top: 35px;
 
           .type {
-            margin-left: 10px;
+            @include span-columns(3 of 5);
+            margin-top: 50px;
           }
 
           h3 {
@@ -84,8 +127,7 @@
           }
 
           img {
-            height: 120px;
-            width: 120px;
+            @include span-columns(2 of 5);
             border-radius: 50%;
             border: solid 3px $white;
             background-color: $black;
@@ -101,7 +143,7 @@
         }
 
         &.github:before {
-          background: url("/images/projects/info/github.png") no-repeat;
+          background-image: url("/images/projects/info/github.png");
         }
 
         &.source:before {
@@ -120,34 +162,27 @@
           background-image: url("/images/projects/info/final-version.png");
         }
       }
+
+      @include media($mobile) {
+        .info {
+          @include span-columns(5 of 12);
+
+          .type {
+            @include span-columns(5 of 5);
+            max-width: 100%;
+            margin-left: 0;
+          }
+
+          &:nth-child(odd) {
+            @include shift(1 of 12);
+          }
+        }
+      }
     }
-  }
-}
 
-.project-infos {
-  position: relative;
-  color: $white;
-
-  .title,
-  .subtitle {
-    position: absolute;
-    left: 18%;
-    font-weight: 300;
-  }
-
-  .title {
-    top: 30%;
-    font-size: 56px;
-  }
-
-  .subtitle {
-    top: 45%;
-    width: 70%;
-    font-size: 36px;
-  }
-
-  .project-image {
-    width: 100%;
-    max-height: 600px;
+    @include media($mobile) {
+      @include span-columns(12);
+      @include shift(0);
+    }
   }
 }
