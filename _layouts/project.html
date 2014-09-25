@@ -7,8 +7,8 @@
 
     {% include header.html %}
     <div class="project-infos">
-      <p class="subtitle">{{ page.subtitle }}</p>
       <h1 class="title">{{ page.title }}</h1>
+      <p class="subtitle">{{ page.subtitle }}</p>
       <img src="/images/projects/backgrounds/{{ page.background }}" class="project-image">
     </div>
     <section class="container">
@@ -20,7 +20,7 @@
         <ul class="project-list-info">
           <li class="info category">
             <p class="type"><small>categoria</small><br>
-              {{ page.categories }}</p>
+              {{ site.data.categories[page.categories.first] }}</p>
           </li>
           <li class="info github">
             <p class="type"><small>acesse o repositório</small><br>
@@ -85,7 +85,9 @@
           {% endfor %}
         </ul>
 
-        {{ content }}
+        <article>
+          {{ content }}
+        </article>
       </div>
       {% include sharing_buttons.html %}
       {% include see_also.html %}

@@ -4,7 +4,7 @@
     {% for post in site.posts limit: 8 %}
       {% capture modulus_see_more %}{{ forloop.index | mod:4 }}{% endcapture %}
       <li class="{% if modulus_see_more == "0" %}omega{% endif %}">
-        <h3 class="title">{{ post.title }}</h3>
+        <h3 class="title"><a class="title" href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a></h3>
         {{ post.description | markdownify }}
         <a href="{{ post.url }}">[...]</a>
       </li>
