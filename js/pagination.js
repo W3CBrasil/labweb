@@ -2,41 +2,53 @@
   var Pagination = function () {
     this.$loader = $('.load-more');
     this.category = this.$loader.data('category');
-    this.postsUrls = [];
+    this.postsUrls = [],
+    this.postsToLoad = $(".posts").children().length,
+    this.isFetchingPosts = false;
 
     this.init = function () {
       if (this.$loader.length < 1) {
         return false;
       }
 
+      this.loadPostsUrls();
       this.addEventListener();
     };
 
-    this.fetchPosts = function () {
+    this.loadPostsUrls = function () {
       var that = this,
           urlName = !this.category ? '/projects' : '/projects-' + this.category;
 
       $.getJSON(urlName + '.json', function (data) {
         that.postsUrls = data['posts'];
 
-        var loadedPosts = 0,
-            postCount = $(".posts").children().length,
-            callback = function() {
-              loadedPosts++;
-              var postIndex = postCount + loadedPosts;
-
-              if (postIndex > that.postsUrls.length-1) {
-                that.disableFetching();
-                return;
-              }
-
-              if (loadedPosts < postCount) {
-                that.fetchPostWithIndex(postIndex, callback, "dentro do if");
-              }
-            };
-
-        that.fetchPostWithIndex(postCount + loadedPosts, callback, "primeiro");
+        if (that.postsUrls.length <= that.postsToLoad) {
+          that.disableFetching();
+        }
       });
+    };
+
+    this.fetchPosts = function () {
+      if (!this.postsUrls) return;
+
+      var that = this,
+          loadedPosts = 0,
+          postCount = $(".posts").children().length,
+          callback = function() {
+            loadedPosts++;
+            var postIndex = postCount + loadedPosts;
+
+            if (postIndex > that.postsUrls.length-1) {
+              that.disableFetching();
+              return;
+            }
+
+            if (loadedPosts < that.postsToLoad) {
+              that.fetchPostWithIndex(postIndex, callback);
+            }
+          };
+
+      this.fetchPostWithIndex(postCount + loadedPosts, callback);
     };
 
     this.fetchPostWithIndex = function (index, callback, msg) {
@@ -54,12 +66,14 @@
           else {
             $(data).find(".project").appendTo(".posts");
           }
+
           $('.tooltip').tooltipster({
             position: 'bottom',
             theme: 'tooltip-project',
             contentAsHTML: true,
             interactive: true
           });
+
           callback();
         }
       });

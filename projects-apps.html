@@ -17,7 +17,7 @@ permalink: /projects/apps/
   {% include listing-mode.html %}
 
   <div class="posts" data-projects-wrapper>
-    {% for post in site.categories.app limit: 1 %}
+    {% for post in site.categories.app limit: 6 %}
       {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
       {% include project_data.html post=post %}
     {% endfor %}
