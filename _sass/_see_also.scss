@@ -15,11 +15,10 @@
 
     li {
       @include span-columns(3 of 12);
-      display: inline-block;
       padding: 10px 0;
       border-bottom: dashed 1px $orange;
       color: $black;
-      min-height: 252px;
+      min-height: 264px;
 
       &.omega {
         @include omega;
