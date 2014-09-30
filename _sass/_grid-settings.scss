@@ -7,4 +7,5 @@ $max-width: em(960);
 $visual-grid-index: front;
 
 $bp-960: new-breakpoint(max-width 960px);
+$bp-600: new-breakpoint(max-width 600px);
 $mobile: new-breakpoint(max-width 480px);

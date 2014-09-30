@@ -33,4 +33,8 @@
   @include media($mobile) {
     display: none;
   }
+
+  @include media($bp-600) {
+    display: none;
+  }
 }
