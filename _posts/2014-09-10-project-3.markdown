@@ -12,7 +12,8 @@ github: https://github.com/lhvolso/ReclamacoesProcon
 final_version: http://www.reclamacoesprocon.com.br/
 status: Lançado em 08/05/2012
 raw_data: http://dados.gov.br/dataset/cadastro-nacional-de-reclamacoes-fundamentadas-procons-sindec
-background: "bg-highlight.png"
+thumb: "3_reclamacoesprocon_thumb.png"
+background: "3_reclamacoesprocon_1022x606.png"
 ---
 
 ##Contextualização

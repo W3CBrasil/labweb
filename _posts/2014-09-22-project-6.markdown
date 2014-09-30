@@ -12,7 +12,8 @@ github: https://github.com/paulovianna/bundespolizei
 final_version: http://analyticsmj.github.io/prf/
 status: Lançado em 08/05/2012
 raw_data: http://dados.gov.br/dataset/acidentes-rodovias-federais
-background: "bg-highlight.png"
+thumb: "6_analyticsmj_thumb.png"
+background: "6_analyticsmj_1022x606.png"
 ---
 
 ##Contextualização
