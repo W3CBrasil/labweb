@@ -113,6 +113,16 @@
           background: url("/images/arrow-right.png") no-repeat 14px 15px, rgba(255, 255, 255, .4);
         }
       }
+
+      @include media($bp-600) {
+        @include span-columns(10 of 10);
+        @include shift(0);
+      }
+
+      @include media($mobile) {
+        @include span-columns(10 of 10);
+        @include shift(0);
+      }
     }
   }
 }
