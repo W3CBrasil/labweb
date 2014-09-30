@@ -44,6 +44,19 @@
     }
   }
 
+  @include media($bp-600) {
+    .title {
+      margin-bottom: 0px;
+    }
+
+    ul {
+      li {
+        @include span-columns(12 of 12);
+        min-height: 100px;
+      }
+    }
+  }
+
   @include media($mobile) {
     .title {
       margin-bottom: 0px;
