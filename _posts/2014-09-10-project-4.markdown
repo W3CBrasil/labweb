@@ -12,6 +12,7 @@ github: https://github.com/proanalise/ProAnalise
 final_version: http://www.proanalise.co.nf/
 status: Lançado em 08/05/2012
 raw_data: http://dados.gov.br/dataset/cadastro-nacional-de-reclamacoes-fundamentadas-procons-sindec
+thumb: "4_proanalise_thumb.png"
 background: "4_proanalise-1022x606.svg"
 ---
 

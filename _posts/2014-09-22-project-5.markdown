@@ -12,6 +12,7 @@ github: https://github.com/paulovianna/bundespolizei
 final_version: http://200.132.38.42/mapprf/
 status: Lançado em 08/05/2012
 raw_data: http://dados.gov.br/dataset/acidentes-rodovias-federais
+thumb: "5_mapprf_thumb.png"
 background: "5_mapprf_1022x606.png"
 ---
 
