@@ -5,7 +5,7 @@ subtitle: "Com um simples clique é possível filtrar por unidade federativa as 
 date:   2014-09-10 17:49:49
 categories: app
 description: "O projeto permite filtrar os dados do Procon sobre as reclamações a partir de duas categorias: o setor de atuação da empresa e a unidade federativa que originou a reclamação."
-authors: ["jesse_filho", "gloria_lima", "alberto_tavares", "jonatas_lira", "alberto_tavares"]
+authors: ["jesse_filho", "gloria_lima", "alberto_tavares", "jonatas_lira"]
 technologies: "CSS3, HTML5, PHP, Mysql, Javascript"
 authors_tolltip: ""
 github: https://github.com/proanalise/ProAnalise

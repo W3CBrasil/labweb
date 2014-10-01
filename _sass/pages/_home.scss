@@ -33,10 +33,10 @@
 
   .highlight-title {
     @include span-columns(8 of 8);
+    @include pad;
     margin-top: 176px;
     height: 94px;
     background-color: $white;
-    @include pad;
     color: $blue;
     font-family: 'AdventProSemibold';
     font-size: 40px;
@@ -62,7 +62,7 @@
     background-color: $white;
     font-family: 'LatoLight';
     font-size: 20px;
-    line-height: golden-ratio(1em, 1);
+    line-height: 30px;
 
     a {
       color: $blue;
