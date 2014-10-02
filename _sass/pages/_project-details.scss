@@ -18,6 +18,7 @@
     top: 45%;
     width: 70%;
     font-size: 36px;
+    line-height: 50px;
   }
 
   .project-image {
@@ -61,7 +62,8 @@
     p {
       margin: 15px 0;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 31px;
+      color: $black;
     }
 
     a {
@@ -209,12 +211,13 @@
 
       h2 {
         font-size: 46px;
-        line-height: 40px;
+        line-height: 60px;
       }
 
       article {
         p {
           margin-left: 3px;
+          line-height: 29px;
         }
       }
     }
