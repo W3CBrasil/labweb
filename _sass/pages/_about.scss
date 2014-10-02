@@ -48,6 +48,16 @@
       float: right;
     }
 
+    @include media($mobile) {
+      .subtitle {
+        line-height: 41px;
+      }
+
+      p {
+        line-height: 29px;
+      }
+    }
+
     .carousel {
       @include span-columns(8 of 10);
       @include shift(1);
