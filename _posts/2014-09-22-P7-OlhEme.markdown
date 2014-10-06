@@ -1,0 +1,51 @@
+---
+layout: project
+title:  "De Olho nas Emendas do DF"
+subtitle: "Uma plataforma para acompanhamento das emendas legislativas"
+date:   2014-09-10 17:49:49
+categories: app
+description: "Com esse projeto o cidadão pode verificar quais obras ou serviços estão sendo entregues em sua vizinhança durante o ano."
+authors: ["denis_moura", "diego_ramalho", "felipe_permino", "leonardo_oliveira", "decko", "derushi_farias", "ricardo_poppi", "kai_mishima", "luis_silva", "marc_arnoldi"]
+technologies: "MySQL, Qgis, JSON, Chroma.js, API do Google Maps, Require.js, Knockout"
+authors_tolltip: "Denis Moura <br> Diego Ramalho <br> Felipe Permino <br> Leonardo Oliveira <br> André Filipe <br> Derushi Farias <br>	Ricardo Poppi <br> Kai Mishima <br> Luiz Carlos Silva <br> Marc Arnoldi"
+github: https://github.com/ThackdayDF/EmendasDF/
+final_version: https://emendas.crowdmap.com/
+status: Lançado em 08/05/2012
+raw_data: http://www.cl.df.gov.br/dcl2011
+background: "7_Olho_emendas_1022x606.png"
+---
+
+##Contextualização
+
+O [1º Concurso de Softwares para Dados Abertos OD4D](http://www.od4d.org/2013/06/26/resultado-do-1o-concurso-de-softwares-para-dados-abertos-od4d/), ação conjunta do escritório do W3C no Brasil em parceria com a [Comissão Econômica para a América Latina e o Caribe (CEPAL)](http://www.cepal.org/) e financiado pelo [Centro Internacional de Pesquisa e Desenvolvimento do Canadá (IDRC)](http://www.idrc.ca/EN/Pages/default.aspx), ocorreu em abril de 2013, e teve como objetivo fomentar a melhoria de ferramentas baseadas em dados abertos públicos na América Latina e promover a cultura do acesso à informação pública.
+
+Esse concurso está vinculado ao projeto [Dados Abertos para o Desenvolvimento (OD4D)](http://www.od4d.org/), que explora como a abertura de dados pode contribuir para a melhoria das políticas públicas nos países da América Latina e no Caribe, isto é, como os dados abertos podem auxiliar na prestação de contas de políticas desses países, na criação de serviços inovadores e na promoção de uma economia do conhecimento mais inclusiva.
+
+O [concurso](http://www.od4d.org/wp-content/uploads/2013/04/Concurso_de_Software1.pdf) teve como aplicativo vencedor o projeto [Olho nas Emendas do DF (ONE)](https://emendas.crowdmap.com/), ferramenta que georreferencia as emendas dos deputados distritais à Lei Orçamentária Anual (LOA) do DF. Com esse projeto o cidadão pode verificar quais obras ou serviços estão sendo entregues em sua vizinhança durante o ano. Também é possível filtrar as emendas por: deputado, tipo de gasto, evento ou órgão cujo recurso está sendo administrado, bem como monitorar em quais regiões do DF os recursos estão sendo aplicados.
+
+O [ONE](https://github.com/ThackdayDF/EmendasDF/) foi concebido pelo coletivo [Transparência Hacker DF](http://thackdaydf.com.br/) juntamente com o projeto [Adote um Distrital](http://www.adoteumdistrital.org.br/) que também fomenta o controle social e promove a eficiência nos gastos públicos. Para [Denis Moura](https://github.com/Demoulidor), idealizador e líder do projeto ONE, a experiência de participar do 1º Concurso de Software para Dados Abertos OD4D foi desafiadora, pois a Câmara Distrital nunca havia disponibilizado os dados a respeito das emendas. Denis explica que após um esforço da ONG [Instituto de Fiscalização e Controle (IFC)](http://www.adoteummunicipio.org.br/novo/) em 2011 cobrando a publicidade das emendas parlamentares do DF a [Câmara Legislativa do Distrito Federal (CLDF)](http://www.cl.df.gov.br/), finalmente, publicou os [dados](http://www.cl.df.gov.br/dcl2011). Entretanto, eles estavam em formato PDF contendo imagens escaneadas dos 801 protocolos impressos das emendas, não sendo, portanto, pesquisáveis de forma automatizada.
+
+“Queríamos disponibilizar os dados de qualquer forma porque havia indícios de que a maioria das emendas eram para eventos culturais que, por lei, dispensam licitação pública e, por isso, seriam possíveis formas de se desviar recursos públicos do DF. Então, baixamos as fotos dos documentos do Diário Oficial da CLDF, convertendo as imagens em caracteres pesquisáveis por meio de [OCR (Reconhecimento Ótico de Caracteres)](http://pt.wikipedia.org/wiki/Reconhecimento_ótico_de_caracteres) e, com código em [Python no Scraperwiki](https://classic.scraperwiki.com/scrapers/raspador_de_texto_das_emendas_parlamentares_do_df_/), raspamos os dados dos textos e geramos uma planilha com os dados das emendas”, esclarece o programador.
+
+Denis relata que os dados raspados estavam com muita sujeira (caracteres inválidos), resultante de imperfeições inerentes ao processo de conversão das imagens, mas que uma equipe de voluntários do Projeto Adote um Distrital do IFC os ajudou na correção manual das palavras na planilha. “Na ferramenta livre de business inteligence [Pentaho](http://www.pentaho.com/) preparamos os dados em forma de CSVs exportáveis para a plataforma de visualização de dados [Ushahidi](http://www.ushahidi.com/) e, assim, geolocalizamos em 2011, pela primeira vez, as emendas parlamentares à LOA do DF para 2012. Neste mesmo ano repetimos o feito e observamos que a simples transparência reduziu a quase totalidade das emendas que em 2011/2012 eram destinadas para festas sem licitação para menos da metade em 2012/2013, ou seja, nosso esforço já valeu a pena no combate à corrupção!”, declara Denis.
+
+O ativista acredita que o simples conhecimento da ferramenta por parte dos políticos locais fez com que a quantidade de emendas destinadas às festas caíssem de cerca de 90% das emendas de 2012 para menos de 50% na LOA de 2013 no DF. Para Denis, a maior motivação de trabalhar com o projeto ONE é a possibilidade de cobrar das autoridades, a partir de informações contundentes, possíveis irregularidades na destinação das emendas dos parlamentares distritais.
+
+
+A [Lei Orçamentária Anual](http://www.orcamentocidadao.df.gov.br/orcamento.php), também chamada de LOA, é uma lei que prevê as receitas e fixa as despesas públicas para o período de um exercício financeiro. O orçamento público é resultado da participação dos Poderes Executivo e Legislativo. O Governador do Distrito Federal, que representa o Poder Executivo, envia para a Câmara Legislativa o Projeto de Lei Orçamentária Anual, também chamado de PLOA. Na Câmara, o projeto é discutido pelos deputados distritais, que apresentam propostas de emendas ao projeto original com a finalidade de atender às comunidades que representam. O projeto é devolvido ao governador que pode apresentar vetos às emendas parlamentares. Caso seja sancionado, o PLOA torna-se LOA, a Lei Orçamentária Anual.
+
+Para 2014, os 24 deputados distritais tiveram a possibilidade de [emendar o projeto da Lei Orçamentária Anual](http://www.adoteumdistrital.org.br/_adote_vis.php?acao=visualizarnoticias&id_noticias=55) para 2014 com propostas de R$ 14,5 milhões para cada um dos parlamentares, o que equivale a um total de R$ 348 milhões em emendas (cota máxima permitida) para os 24 deputados distritais.
+
+##Desafios Envolvidos
+
+Denis Moura expõe que a principal dificuldade enfrentada foi a própria produção dos dados, que nem se quer estavam disponibilizados de forma textual. “Tivemos que fazer OCR para transformar fotos de texto em informação de fácil acesso a pesquisa e depois desenvolver um software para extrair desse texto, agora acessível, os dados de cada uma das 801 emendas à LOA 2012 do DF”.
+
+O programador menciona ainda que a principal deficiência dos dados fornecidos pela base é o fato de não se poder relacionar a emenda emitida pela Câmara e geolocalizada no projeto ONE com a respectiva execução orçamentária no Governo do DF. “A Câmara Legislativa do DF não informa o código da execução orçamentária do GDF que está relacionado às emendas de seus parlamentares”.
+
+Para o futuro, Denis avalia que o projeto irá potencializar a mobilização de pessoas por meio de mecanismos de [CRM](http://pt.wikipedia.org/wiki/CRM) (gestão de relacionamento) que serão agregados à plataforma. Isso permitirá que a ferramenta indique por e-mail e redes sociais dos usuários novas movimentações em emendas previamente consultadas. Possibilitará também convidar novos atores estratégicos para o projeto por meio do mapeamento prévio de ONGs, pessoas e atores políticos.
+
+##Principais linguagens e tecnologias utilizadas
+
+As imagens escaneadas dos documentos publicados foram convertidas em texto por meio de tecnologia [OCR](http://pt.wikipedia.org/wiki/Reconhecimento_ótico_de_caracteres). O sistema [ScrapperWiki](https://blog.scraperwiki.com/) foi utilizado para a raspagem de dados por meio de scripts escritos na linguagem [Python](http://www.python.org.br). O processamento das informações resultantes e o preparo das visualizações foram executados com auxílio das ferramentas [Pentaho](http://www.pentaho.com/) e [Ushahidi](http://www.ushahidi.com/). O website para publicação das visualizações de dados foi implementado utilizando-se linguagem [PHP](http://php.net/) no lado do servidor e [HTML](http://dev.w3.org/html5/html-author/), [CSS](http://www.w3.org/Style/CSS/Overview.en.html) e [JavaScript](http://www.crockford.com/javascript/javascript.html) no navegador dos usuários.
+
+

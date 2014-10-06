@@ -1,13 +1,13 @@
 ---
 layout: project
-title:  "Reputação S/A"
+title: "Reputação S/A"
 subtitle: "Ferramenta para a visualização de dados de empresas reclamadas no Procon."
-date:   2014-09-05 17:49:49
+date: 2014-09-05 17:49:49
 categories: app
 description: "Ferramenta para a visualização de dados de empresas reclamadas no Procon."
 authors: ["thiago_bueno", "vitor_baptista", "leonardo_tartari"]
 technologies: "Ruby, Google Refine, Mongo DB, Javascript, HTML, CSS3"
-authors_tolltip: "Kent <br> Martin <br> Robert"
+authors_tolltip: "Thiago Bueno <br> Vitor Baptista <br> Leonardo Tartari"
 github: https://github.com/dataviz/reputacao-sa.org
 final_version: http://reputacao-sa.org/
 status: Lançado em 08/05/2014
@@ -35,3 +35,9 @@ Os principais desafios para a realização da aplicação e para mantê-la atual
 Como o [Procon](http://pt.wikipedia.org/wiki/Fundação_Procon) não está presente em todas as cidades de um estado, sendo os dados das reclamações disponibilizados apenas onde esse órgão atua, Thiago Bueno ressalta que uma fonte interessante para cruzamento de dados seria as agências de reclamação online como o [Reclame Aqui](http://www.reclameaqui.com.br/), onde as reclamações não chegam a ser levantadas no Procon, mas online e diretamente com as empresas.
 
 Para o futuro, há ainda outras formas interessantes de se explorar esse projeto, como fazendo o agrupamento por setores da indústria, o que facilitaria a comparação entre empresas do mesmo mercado, entretanto só faz sentido esse esforço caso a base de dados fosse constantemente renovada e a equipe fizesse o esforço de manter o aplicativo sempre atualizado.
+
+##Linguagens e tecnologias utilizadas 
+
+Para a limpeza dos dados foi utilizado [Ruby](https://www.ruby-lang.org/en/) e [Google Refine](https://code.google.com/p/google-refine/). No servidor, [Rails](http://rubyonrails.org/) e banco de dados [MongoDB](http://www.mongodb.org/). Para a visualização, foram utilizados [HTML](http://dev.w3.org/html5/html-author/), [CSS](http://www.w3.org/Style/CSS/Overview.en.html) e [JavaScript](http://www.crockford.com/javascript/javascript.html).
+
+

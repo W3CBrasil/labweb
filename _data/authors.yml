@@ -118,6 +118,61 @@ paolo_carrasco:
   site: "https://github.com/paolocarrasco"
   email: "pcarrasco@thoughtworks.com"
   avatar: "https://avatars3.githubusercontent.com/u/1524522?v=2&s=460"
+#autores do projeto 8 Metaprint
+juca_sanches:
+  name: "Felipe Sanches"
+  site: "https://github.com/felipesanches"
+  email: "juca@members.fsf.org"
+  avatar: "https://avatars1.githubusercontent.com/u/213676?v=2&s=460"
+denis_moura:
+  name: "Denis Moura"
+  site: "https://github.com/Demoulidor"
+  email: "demoulidor@gmail.com" 
+  avatar: "https://avatars3.githubusercontent.com/u/3680554?v=2&s=460"
+diego_ramalho:  
+  name: "Diego Ramalho"
+  site: "http://pt.scribd.com/dfreitas_73"
+  email: "diegoramalho2005@gmail.com"
+  avatar: "http://www.cidadedemocratica.org.br/images/uploaded/0000/6781/diego_novo.jpg"
+felipe_permino:
+  name: "Felipe Permino"
+  site: "https://twitter.com/Perminio"
+  email: "felipe_piro@hotmail.com"
+  avatar: "https://pbs.twimg.com/profile_images/1508199393/palhaco_400x400.jpg"
+leonardo_oliveira:
+  name: "Leonardo Oliveira"
+  site: "https://www.linkedin.com/pub/leonardo-eustaquio-de-oliveira/3a/8/a4"
+  email: "leonardofowl@hotmail.com"
+  avatar: "https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10410098_789399067767675_2294593086897758450_n.jpg?oh=cb8242ad8fe448b3f8e2f9500f26dbf2&oe=54C125C7&__gda__=1421664127_7e52c30e04a35dc6c77ce51bd41f8442"
+andre_decko:
+  name: "André Filipe de Assunção e Brito"
+  site: "https://github.com/decko"
+  email: "brito.afa@gmail.com"
+  avatar: "https://avatars3.githubusercontent.com/u/20204?v=2&s=460"
+derushi_farias:
+  name: "Derushi Farias"
+  site: "https://www.linkedin.com/pub/derushi-farias/21/b93/bb6"
+  email: "derushi2000@gmail.com"
+  avatar: "https://lh3.googleusercontent.com/-WzUHKaeOuIE/AAAAAAAAAAI/AAAAAAAAAAA/3cGIJjSmGDk/photo.jpg"
+ricardo_poppi:
+  name: "Ricardo Poppi"
+  site: "https://twitter.com/ricardopoppi"
+  email: "ricabras@gmail.com"
+  avatar: "https://pbs.twimg.com/profile_images/1495398251/novoperfil_400x400.png"
+kai_mishima:
+  name: "Kai Mishima"
+  site: "https://www.linkedin.com/pub/kai-mishima/58/165/341"
+  email: "kai.coc@gmail.com"
+  avatar: "https://www.linkedin.com/mpr/pub/image-xX2O7y0lrabW-wfTcWtrS70G2BLN-LL3xg3rLavlm_KhyZkb9X2ri3VSR4Zhy6yhD1s/kai-mishima.jpg"
+luis_silva:
+  name: "Luiz Carlos V. Silva"
+  site: "http://olhonasemendas.com.br/page/index/1"
+  email: "sparkdf@gmail.com"
+  avatar: "https://yt3.ggpht.com/-Jo9qdA0SHFw/AAAAAAAAAAI/AAAAAAAAAAA/jdC3mElkbk0/s100-c-k-no/photo.jpg"
+marc_arnoldi: 
+  name: "Marc Arnoldi"
+  site: "https://twitter.com/marcarnoldi"
+  email: "marcarnoldi@globo.com"
 
 
 
