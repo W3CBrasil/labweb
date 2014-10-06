@@ -1,58 +1,57 @@
 ---
 layout: project
-title:  "Retratos da Violência"
-subtitle: "Um retrato da violência contra a mulher usando dados abertos"
-date:   2014-09-05 17:49:49
+title:  "MapPRF"
+subtitle: "Veja quais são os horários, dias da semana e meses do ano em que acontecem mais acidentes."
+date:   2014-09-10 17:49:49
 categories: visualization
-description: "Visualização utilizada para desenhar um retrato da violência contra a mulher no Rio Grande do Sul utilizando Dados Abertos do Governo. [Repositório aqui.](https://github.com/dataviz/retrato-da-violencia.org)"
-authors: ["vitor_baptista", "leonardo_tartari", "thiago_bueno"]
-thumb: "1_retrato_violencia_thumb.png"
-technologies: "Ruby, JSON, Javascript, HTML, Css"
-authors_tolltip: "Kent <br> Martin <br> Robert"
-github: https://github.com/dataviz/retrato-da-violencia.org
-final_version: https://www.google.com
-status: Lançado em 08/05/2014
-raw_data: http://dados.rs.gov.br/
-background: "1_retrato_violencia_1022x606.png"
+description: "O projeto apresenta, por meio de uma interface limpa, informações sobre as rodovias federais segmentadas por município, permitindo a visualização do número de ocorrências por horário."
+authors: ["joel_silva", "vinicius_immich", "paulo_henrique", "augusto_folleto", "augusto_lazzaroto"]
+technologies: "CSS3, HTML5, JQuery, CanvasJS, Django (python), PostgreSQL, GeoLiberty, API do Google Maps"
+authors_tolltip: ""
+github: https://github.com/paulovianna/bundespolizei
+final_version: http://200.132.38.42/mapprf/
+status: Lançado em 08/05/2012
+raw_data: http://dados.gov.br/dataset/acidentes-rodovias-federais
+thumb: "5_mapprf_thumb.png"
+background: "5_mapprf_1022x606.png"
 ---
 
-##Contextualização do projeto
+##Contextualização
 
-O escritório do [W3C no Brasil](http://www.w3c.br/Noticias/PremiacaoDecodersW3cRs), em parceria com o Governo do Estado do Rio Grande do
-Sul e a Companhia de Processamento de [Dados do RS (Procergs)](http://www.procergs.rs.gov.br/), realizou o 1o [“Decoders W3C”](http://www.decoders.w3c.br/), competição entre times pelo melhor aplicativo utilizando os [padrões do W3C (http://www.w3.org/wiki/Open_Web_Platform) para o
-fornecimento de serviços baseados em dados abertos disponíveis no [portal de acesso à](http://www.centraldocidadao.rs.gov.br)
-informação do Estado.
+O [Mapeamento de Ocorrências da Polícia Rodoviária Federal (MapPRF)](http://200.132.38.42/mapprf/) é um dos projetos premiados no [2° Concurso de Aplicativos para Dados Abertos do Ministério da Justiça e W3C Brasil](http://www.w3c.br/Home/ConcursoAplicativos). O concurso foi lançado em agosto de 2013, e teve como objetivo incentivar a criação de ferramentas de visualização e acesso a dados de interesse público que possam gerar estatísticas sobre os horários em que ocorrem mais fatalidades, localizar no mapa os trechos mais perigosos de cada rodovia ou traçar um perfil dos acidentes nas estradas.
 
-A maratona durou doze dias tendo onze equipes inscritas. Os três melhores projetos, entre
-eles o vencedor [“Retratos da Violência Contra a Mulher no RS”](http://retratodaviolencia.org/), foram premiados durante o 13o Fórum Internacional Software Livre (FISL) em julho de 2012.
+Essa [iniciativa](http://www.w3c.br/Noticias/ConcursoMJW3C2) aconteceu por meio da parceria realizada entre o Ministério da Justiça (Secretaria Executiva e Departamento da Polícia Rodoviária Federal - PRF), a Controladoria-Geral da União e o Ministério do Planejamento, Orçamento e Gestão (SLTI) tendo como referência a base de dados do Sistema de Informações Gerenciais (SIGER), mantida pelo Departamento de Polícia Rodoviária Federal.
 
-O principal objetivo dessa competição foi tornar os dados públicos do Estado manipuláveis
-por qualquer cidadão que quisesse fazer uso desses dados, possibilitando mecanismos de
-controle social das informações públicas. O resultado foram várias possibilidades de
-extrair significados e padrões a partir do cruzamento e visualização desses dados.
+A base de dados do [SIGER](http://www.google.com/url?q=http%3A%2F%2Fdados.gov.br%2Fdataset%2Facidentes-rodovias-federais&sa=D&sntz=1&usg=AFQjCNHWdRPVeJ-9yaBEZYMo3VdFltuX_Q) possui informações detalhadas sobre os acidentes registrados pela PRF em boletins de ocorrências de trânsito nas rodovias federais em todo o Brasil. São mais de um milhão de registros coletados no período de 2007 a 2013, contendo características dos veículos envolvidos, causa identificada do acidente, quantidade de pessoas envolvidas e descrição do ocorrido.
 
-Por exemplo, ao navegarmos pela visualização vencedora “Retratos da Violência Contra a Mulher no RS”, realizada por Vitor Baptista, Thiago Bueno e Leonardo Tartari, facilmente identificamos que a cidade com maior ocorrência de estupros no Rio Grande do Sul é Soledade, com 163 registros da violência sexual para cada 100 mil habitantes. Já a com menor índice é Pelotas, com 54 registros por 100 mil habitantes. Outro dado bastante interessante que salta aos nossos olhos é que a maioria dos estupros ocorrem dentro das próprias residências e não apenas em locais públicos como a mídia de massa comumente divulga.
+Tendo conquistado a 3ª colocação no concurso, o projeto [MapPRF](https://github.com/paulovianna/bundespolizei) apresenta, por meio de uma interface limpa, informações sobre as rodovias federais segmentadas por município, permitindo a visualização do número de ocorrências por horário.
 
-Para Vitor Baptista, representante do projeto vencedor e membro da [Open Knowledge Foundation](http://br.okfn.org/), trabalhar nos [dados sobre violência sexual contra mulheres](http://dados.rs.gov.br/dataset/violencia-contra-mulher-estupros) foi uma ótima oportunidade de expor informações que possuem um sentido maior do que o puramente técnico. “O tipo de dados que analisamos é bem triste, e em alguns momentos foi difícil separar as linhas naquela tabela das mulheres que sofreram essa violência, especialmente quando encontrávamos extremos de idades - as mais novas tinham 1 ano, a mais velha, 92”.
+O coordenador da equipe, Joel da Silva, explica que apesar da base de dados disponibilizada ser muito rica e possibilitar a realização de inúmeras análises, por questões de limitação de tempo, o grupo do MapPRF optou por minimizar o escopo, trabalhando apenas com um subconjunto de dados dos registros de acidentes nas rodovias federais. Além disso, foram utilizados dados da malha viária obtida a partir do [Ministério dos Transportes](http://www.transportes.gov.br/) e também dados oriundos do Instituto Brasileiro de Geografia e Estatística [(IBGE)](http://www.ibge.gov.br/home/).
 
-O time que ficou em 2o lugar trabalhou com dados sobre gastos realizados pelo Poder
-Executivo para a população gaúcha e o que ficou em terceiro lugar dedicou­se aos dados
-sobre compras públicas do RS. Os jurados levaram em conta não só os aspectos técnicos da
-aplicação, mas principalmente critérios de criatividade, facilidade de uso e impacto na
-sociedade.
+Para o programador da equipe, Vinicius Bisognin Immich, ter participado do 2º Concurso de Aplicativos para Dados Abertos foi uma ótima experiência. “Particularmente me afetou de uma maneira muito positiva por todo o conhecimento que consegui adquirir tanto durante todo o processo de desenvolvimento do aplicativo quanto no próprio evento no qual fomos premiados.”
 
-##Desafios envolvidos
+Adaptado para dispositivos móveis, o projeto MapPRF mostra, de forma simples, quais são os horários, dias da semana e meses do ano em que acontecem mais acidentes. Outra informação visível é a concentração das ocorrências nos trechos famosos pela grande quantidade de acidentes. Joel da Silva afirma que isso só foi possível após terem feito o georreferenciamento das ocorrências por meio de interpolação.
 
-O principal desafio não foi o técnico, mas o político, pois apesar dos dados disponibilizados estarem bem organizados, eles cobrem apenas o período de 2006 a 2012, isto é, falta uma periodicidade de atualizações, seja semestral ou anual. Além disso, a visualização seria mais rica se os mesmos dados fossem comparados com outros estados. “Quando terminamos esse projeto, enviamos um pedido para o Ministério da Justiça pedindo o mesmo tipo de informação só que para todas as cidades brasileiras. Infelizmente, o que eles disponibilizaram foi somente uma tabela com número de ocorrências, sem informações sobre o perfil da vítima e acusado, nem dados sobre o local de ocorrência da violência”, lamenta Vitor.
+O desenvolvedor [Vinicius Immich](http://pt.slideshare.net/PauloHenriqueVianna/geoliberty) relata que a informação mais impactante para ele foi a quantidade de acidentes que ocorreram na rodovia mais próxima à sua cidade. “O projeto GeoLiberty, criado por dois outros integrantes do nosso time, realmente nos ajudou a conseguir visualizar esse dados de uma forma melhor em um formato de mapa.” Além da análise de dados, o MapPRF permite que os usuários com perfil de administrador possam realizar a manutenção e atualização dos dados.
 
-O desenvolvedor lembra ainda que os dados das cidades com menos de 100 mil habitantes em cada estado eram agregados em um único registro. “Na Paraíba, por exemplo, existem 223 municípios, mas só 5 têm mais que 100 mil habitantes. Assim, todos os outros 218 estão agregados em um único número, o que impossibilita diversas análises”.
+Ao todo participaram do concurso 82 equipes, tendo o projeto [DPRF.info](http://www.dprf.info/) conquistado o 1º lugar no pódio e o [Analytics MJ](http://analyticsmj.github.io/prf/) a segunda posição.
 
-Falta também um maior detalhamento dos dados disponibilizados pelo governo do Rio Grande do Sul. A especificação do bairro ou rua e não apenas cidade, bem como outros tipos de violência e não só estupro, possibilitaria análises mais ricas a partir do maior refinamento dos dados.
+##Desafios Envolvidos
 
-##Principais linguagens e tecnologias utilizadas
+Os principais desafios enfrentados pela equipe do MapPRF incidem sobre o formato dos dados disponibilizados, que tornou difícil a sua manipulação ao integrá-los em uma base que fosse consistente. “Existiam muitas duplicidades nos dados e informações repetidas que não eram necessárias ou que por si mesmo estavam apenas erradas ou trocadas. Seria muito melhor se os dados disponibilizados tivessem informações geográficas mais precisas, por exemplo, se todas as ocorrências tivessem uma localização geográfica, a quantidade de análises poderia ter sido incrementada consideravelmente”, expõe Joel da Silva.
 
-Para a limpeza dos dados foi utilizado Ruby. Foram criados pequenos programas que reformatavam os dados em JSON, e para a visualização, foram utilizados HTML, CSS e JavaScript.
+O coordenador da equipe esclarece ainda que o georreferenciamento foi de grande importância para a análise de dados e para a implementação de funcionalidades futuras. “Na fase de integração de dados elaboramos um procedimento que utiliza interpolação para gerar uma coordenada geográfica (Latitude, Longitude) para identificar o local aproximado de um acidente. Esse procedimento foi necessário porque pouquíssimos registros eram georreferenciados na base original”. Como exemplo, na imagem abaixo podem ser visualizados o local aproximado de acidentes com mortes.
+
+![Map Prf aplicativo](/caminho/caminhoImg.jpg)
+
+Nesse momento, no [MapPRF](http://200.132.38.42/mapprf/) estão disponíveis para análise os dados de acidentes registrados durante os anos de 2011, 2012 e primeiro semestre de 2013. Esses dados podem ser analisados por meio de mapas e gráficos interativos.
+
+Por questões de minimização de escopo, dificuldades no tratamento dos dados inconsistentes e na integração entre as diferentes bases de dados, para algumas análises, o MapPRF disponibiliza consultas mais detalhadas somente para a BR386, no estado do Rio Grande do Sul. Entretanto, essas funcionalidades de análise podem ser aplicadas para as demais rodovias federais.
+
+“Atualmente estamos trabalhando para aprimorar o layout da aplicação de forma a melhorar a interação do usuário com a interface. Após isso acredito que seria ótimo disponibilizar os dados das outras BRs do Brasil juntamente com uma melhoria no sistema de filtro de gráficos”, argumenta Joel da Silva.
 
 
+##Linguagens e tecnologias utilizadas:
 
+No back-end foi usado o projeto [GeoLiberty](http://pt.slideshare.net/PauloHenriqueVianna/geoliberty) com o propósito de cruzar os dados da base com dados geográficos, sendo utilizado o framework [Django](https://www.djangoproject.com/) e a linguagem [Python](http://www.python.org.br/wiki) juntamente com o banco de dados [PostgreSQL](http://www.postgresql.org/). No front-end foram usadas as tecnologias web hoje já consagradas como HTML, CSS, JavaScript juntamente com [jQuery](http://jquery.com/), [CanvasJS](http://canvasjs.com/) para os gráficos e a [API do Google Maps](https://developers.google.com/maps/?hl=pt-br) para os mapas. 
 

@@ -7,7 +7,7 @@ categories: visualization
 description: "O projeto apresenta, por meio de uma interface limpa, informações sobre as rodovias federais segmentadas por município, permitindo a visualização do número de ocorrências por horário."
 authors: ["joel_silva", "vinicius_immich", "paulo_henrique", "augusto_folleto", "augusto_lazzaroto"]
 technologies: "CSS3, HTML5, JQuery, CanvasJS, Django (python), PostgreSQL, GeoLiberty, API do Google Maps"
-authors_tolltip: ""
+authors_tolltip: "joel_silva, vinicius_immich, paulo_henrique, augusto_folleto, augusto_lazzaroto"
 github: https://github.com/paulovianna/bundespolizei
 final_version: http://200.132.38.42/mapprf/
 status: Lançado em 08/05/2012
@@ -51,15 +51,7 @@ Por questões de minimização de escopo, dificuldades no tratamento dos dados i
 “Atualmente estamos trabalhando para aprimorar o layout da aplicação de forma a melhorar a interação do usuário com a interface. Após isso acredito que seria ótimo disponibilizar os dados das outras BRs do Brasil juntamente com uma melhoria no sistema de filtro de gráficos”, argumenta Joel da Silva.
 
 
-##Principais linguagens e tecnologias utilizadas:
+##Linguagens e tecnologias utilizadas:
 
-No back-end foi usado o projeto [GeoLiberty](http://pt.slideshare.net/PauloHenriqueVianna/geoliberty) com o propósito de cruzar os dados da base com dados geográficos, sendo utilizado o framework [Django](https://www.djangoproject.com/) e a linguagem [Python](http://www.python.org.br/wiki) juntamente com o banco de dados [PostgreSQL](http://www.postgresql.org/). No front-end foram usadas as tecnologias web hoje já consagradas como HTML, CSS, JavaScript juntamente com [jQuery](http://jquery.com/), [CanvasJS](http://canvasjs.com/) para os gráficos e a [API do Google Maps](https://developers.google.com/maps/?hl=pt-br) para os mapas.
-
-
-
-
-
-
-
-
+No back-end foi usado o projeto [GeoLiberty](http://pt.slideshare.net/PauloHenriqueVianna/geoliberty) com o propósito de cruzar os dados da base com dados geográficos, sendo utilizado o framework [Django](https://www.djangoproject.com/) e a linguagem [Python](http://www.python.org.br/wiki) juntamente com o banco de dados [PostgreSQL](http://www.postgresql.org/). No front-end foram usadas as tecnologias web hoje já consagradas como HTML, CSS, JavaScript juntamente com [jQuery](http://jquery.com/), [CanvasJS](http://canvasjs.com/) para os gráficos e a [API do Google Maps](https://developers.google.com/maps/?hl=pt-br) para os mapas. 
 
