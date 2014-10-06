@@ -1,6 +1,6 @@
 ---
 layout: project
-title:  "MetaPrint!
+title:  "MetaPrint!"
 subtitle: "Um experimento com impressão 3D e o seu browser"
 date:   2013-09-12
 categories: experiments

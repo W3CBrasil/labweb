@@ -124,7 +124,6 @@ juca_sanches:
   site: "https://github.com/felipesanches"
   email: "juca@members.fsf.org"
   avatar: "https://avatars1.githubusercontent.com/u/213676?v=2&s=460"
-#autores do projeto 7 De olho nas emendas
 denis_moura:
   name: "Denis Moura"
   site: "https://github.com/Demoulidor"
@@ -138,25 +137,25 @@ diego_ramalho:
 felipe_permino:
   name: "Felipe Permino"
   site: "https://twitter.com/Perminio"
-  email:"felipe_piro@hotmail.com"
+  email: "felipe_piro@hotmail.com"
   avatar: "https://pbs.twimg.com/profile_images/1508199393/palhaco_400x400.jpg"
 leonardo_oliveira:
   name: "Leonardo Oliveira"
   site: "https://www.linkedin.com/pub/leonardo-eustaquio-de-oliveira/3a/8/a4"
   email: "leonardofowl@hotmail.com"
   avatar: "https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10410098_789399067767675_2294593086897758450_n.jpg?oh=cb8242ad8fe448b3f8e2f9500f26dbf2&oe=54C125C7&__gda__=1421664127_7e52c30e04a35dc6c77ce51bd41f8442"
-decko:
+andre_decko:
   name: "André Filipe de Assunção e Brito"
   site: "https://github.com/decko"
   email: "brito.afa@gmail.com"
   avatar: "https://avatars3.githubusercontent.com/u/20204?v=2&s=460"
 derushi_farias:
-  name:"Derushi Farias"
+  name: "Derushi Farias"
   site: "https://www.linkedin.com/pub/derushi-farias/21/b93/bb6"
   email: "derushi2000@gmail.com"
   avatar: "https://lh3.googleusercontent.com/-WzUHKaeOuIE/AAAAAAAAAAI/AAAAAAAAAAA/3cGIJjSmGDk/photo.jpg"
 ricardo_poppi:
-  name:"Ricardo Poppi"
+  name: "Ricardo Poppi"
   site: "https://twitter.com/ricardopoppi"
   email: "ricabras@gmail.com"
   avatar: "https://pbs.twimg.com/profile_images/1495398251/novoperfil_400x400.png"
