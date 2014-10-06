@@ -7,12 +7,13 @@ categories: visualization
 description: "O projeto possibilita que as queixas feitas às empresas sejam filtradas pelo gênero dos consumidores e pelo estado de atendimento das reclamações pelo fornecedor. Com apenas um clique no gráfico ou no texto é possível ativar o filtro, que mostrará os gráficos correspondentes à porcentagem total de reclamações."
 authors: ["ricardo_cavalcanti", "rafael_oliveira", "gislene_pereira", "rafael_garcia", "johan_arispe", "paolo_carrasco"]
 technologies: "MySQL, Qgis, JSON, Chroma.js, API do Google Maps, Require.js, Knockout"
-authors_tolltip: ""
+authors_tolltip: "Ricardo Cavalcanti <br> Rafael Oliveira <br> Gislene Pereira <br> Johan Arispe <br> Paolo Carrasco <br> Rafael Garcia"
 github: https://github.com/paulovianna/bundespolizei
 final_version: http://analyticsmj.github.io/prf/
 status: Lançado em 08/05/2012
 raw_data: http://dados.gov.br/dataset/acidentes-rodovias-federais
-background: "bg-highlight.png"
+thumb: "6_analyticsmj_thumb.png"
+background: "6_analyticsmj_1022x606.png"
 ---
 
 ##Contextualização
@@ -37,9 +38,11 @@ Os principais desafios envolvidos foram na integração dos dados e na geração
 
 No blog da Thoughtworks há mais detalhes sobre os obstáculos enfrentados: “O primeiro problema foi onde encontrar dados georeferenciados abertos, e, ao encontrá-los, como transformá-los de forma que pudesse ser renderizado no navegador. Nós descobrimos a biblioteca [kartograph](http://kartograph.org/), que converte [shapefiles](http://pt.wikipedia.org/wiki/Shapefile) em SVG. Com os shapefiles, foi possível agregar as estatísticas aos mapas dos estados”.
 
-Ricardo Cavalcanti destaca ainda que se mais dados fossem disponibilizados, como a frota de veículos de cada estado ou de outras rodovias, as estatísticas se tornariam mais ricas. Quando questionado sobre o que há para ser explorado futuramente nesse projeto, ele lembra que em função da falta de tempo, de apenas um mês para a produção da ferramenta para participar a tempo da competição, sua equipe nem chegou a explorar a base de dados de multas. “Com ela poderíamos tentar encontrar correlações entre quantidades de multas e acidentes. Outra relação interessante seria sobre o estado de conservação da rodovia e o acidente”, finaliza o programador.
+Ricardo Cavalcanti destaca ainda que se mais dados fossem disponibilizados, como a frota de veículos de cada estado ou de outras rodovias, as estatísticas se tornariam mais ricas. Quando questionado sobre o que há para ser explorado futuramente nesse projeto, ele lembra que em função da falta de tempo, de apenas um mês para a produção da ferramenta para participar a tempo da competição, sua equipe nem chegou a explorar a base de dados de multas. “Com ela poderíamos tentar encontrar correlações entre quantidades de multas e acidentes. Outra relação interessante seria sobre o estado de conservação da rodovia e o acidente”, finaliza o programador. 
 
+##Liguagens e tecnologias utilizadas:
 
+A tecnologia de banco de dados utilizada foi o [MySQL](http://www.mysql.com/) e para os dados georefenciados foi utilizado o [Qgis](http://www.qgis.org/en/site/). Para exportar os dados para [SVG](http://www.w3.org/Graphics/SVG/) foi utilizado o [kartograph.py](http://kartograph.org/about/kartograph.py/) e a incorporação desses gráficos vetoriais foi feita com a biblioteca [Raphael.js](http://raphaeljs.com/). Todos os demais dados foram exportados em formato [JSON](http://json.org/). Os gráficos foram desenhados utilizando a biblioteca [Chroma.js](old.driven-by-data.net/about/chromajs/#/) e a [API do Google Charts](https://developers.google.com/chart/). Para a criação da aplicação responsiva foram utilizadas as tecnologias [Require.js](http://requirejs.org/) e [Knockout](http://knockoutjs.com/).
 
 
 

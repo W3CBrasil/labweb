@@ -7,7 +7,7 @@ categories: app
 description: "O projeto permite filtrar os dados do Procon sobre as reclamações a partir de duas categorias: o setor de atuação da empresa e a unidade federativa que originou a reclamação."
 authors: ["jesse_filho", "gloria_lima", "alberto_tavares", "jonatas_lira"]
 technologies: "CSS3, HTML5, PHP, Mysql, Javascript"
-authors_tolltip: ""
+authors_tolltip: "Jessé Filho <br> Glória Lima <br> Alberto Tavares <br> Jonatas Lira"
 github: https://github.com/proanalise/ProAnalise
 final_version: http://www.proanalise.co.nf/
 status: Lançado em 08/05/2012
@@ -40,6 +40,9 @@ O desenvolvedor aponta ainda a má prática adotada pelo governo de converter os
 
 Quando questionado sobre outras informações possíveis de se extrair dessa base de dados o desenvolvedor conclui que há inúmeras possibilidades ainda de manuseio desses dados. “Por exemplo, poderíamos identificar o perfil do consumidor que reage mais rapidamente ao realizar uma reclamação e isolá-lo socialmente para analisar coisas como nível escolar e estrutura familiar; o limite dessa aplicação é diretamente proporcional a nossa criatividade e a sorte de encontrar bons dados".
 
+##Linguagens e tecnologias utilizadas 
+
+Para o layout das páginas web foi utilizado o [HTML5](http://dev.w3.org/html5/html-author/) em conjunto com folhas de estilo [CSS](http://www.w3.org/Style/CSS/Overview.en.html) e interatividade provida por [JavaScript](http://www.crockford.com/javascript/javascript.html). No lado do servidor, foi utilizada a linguagem [PHP](http://en.wikipedia.org/wiki/PHP) e a tecnologia de banco de dados [MySQL](http://www.mysql.com/).
 
 
 

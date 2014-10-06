@@ -7,7 +7,7 @@ categories: app
 description: "O projeto possibilita que as queixas feitas às empresas sejam filtradas pelo gênero dos consumidores e pelo estado de atendimento das reclamações pelo fornecedor. Com apenas um clique no gráfico ou no texto é possível ativar o filtro, que mostrará os gráficos correspondentes à porcentagem total de reclamações."
 authors: ["luiz_volso", "adriano_alves", "marcos_russ", "daniel_ishigaki", "thiago_takeshi"]
 technologies: "CSS3, HTML5, Javascript"
-authors_tolltip: ""
+authors_tolltip: "Luis Volso <br> Adriano Alves <br> Marcos Russ <br> Daniel Ishigaki <br> Thiago Takeshi"
 github: https://github.com/lhvolso/ReclamacoesProcon
 final_version: http://www.reclamacoesprocon.com.br/
 status: Lançado em 08/05/2012
@@ -41,6 +41,11 @@ Os desafios apontados são os mesmos diagnosticados pela equipe do Reputação S
 Outra dificuldade enfrentada pela equipe do Reclamações Procon foi a falta de padronização na identificação das empresas. “Como o sistema é todo descentralizado, cada órgão que recebe as reclamações cadastra o nome da empresa de forma diferente. Para iniciar o projeto precisamos fazer uma grande correção nos dados, o que tomou bastante o nosso tempo”, lamenta o desenvolvedor.
 
 Para que o Reclamações Procon possa ser continuado, é necessário não somente a atualização da base de dados disponibilizada pelo Cadastro Nacional de Reclamações Fundamentadas, que não é atualizada desde 2012, como também a uniformização dos dados, pois há uma enorme variação das informações disponibilizadas em 2012 quando comparadas com os dados de 2011 utilizados no aplicativo, sendo crucial a adaptação de uma série de novos elementos para o projeto.
+
+##Linguagens e tecnologias utilizadas:
+
+Para a camada de conteúdo foi utilizado [HTML5](http://dev.w3.org/html5/html-author/); para a camada de apresentação visual o [CSS](http://www.w3.org/Style/CSS/Overview.en.html); e para a camada de comportamento (funcionalidades dos gráficos) o [JavaScript](http://www.crockford.com/javascript/javascript.html).
+
 
 
 
