@@ -173,6 +173,11 @@ marc_arnoldi:
   name: "Marc Arnoldi"
   site: "https://twitter.com/marcarnoldi"
   email: "marcarnoldi@globo.com"
+thiago_rondon:
+  name: "Thiago Berlitz Rondon"
+  email: "thiago.rondon@gmail.com"
+  site: "https://github.com/thiagorondon"
+  avatar: "https://avatars1.githubusercontent.com/u/122926?v=2&s=460"
 
 
 
