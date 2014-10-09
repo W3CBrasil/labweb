@@ -173,8 +173,42 @@ marc_arnoldi:
   name: "Marc Arnoldi"
   site: "https://twitter.com/marcarnoldi"
   email: "marcarnoldi@globo.com"
-
-
+thiago_rondon:
+  name: "Thiago Berlitz Rondon"
+  email: "thiago.rondon@gmail.com"
+  site: "https://github.com/thiagorondon"
+  avatar: "https://avatars1.githubusercontent.com/u/122926?v=2&s=460"
+#autores do projeto 10
+yaso_cordova:
+  name: "Yasodara Córdova"
+  email: "yaso@nic.br"
+  site: "blog.w3c.br/yaso"
+  avatar: "http://www.w3.org/Consortium/Offices/wp-content/uploads/2012/11/yaso-150x150.jpg"
+rafael_magrin: 
+  name: "Rafael Magrin"
+  email: "rmagrin@thoughtworks.com"
+  site: "https://github.com/rmagrin"
+  avatar: "https://avatars1.githubusercontent.com/u/326633?v=2&s=460"
+jean_kirchner: 
+  name: "Jean Kirchner"
+  email: "jkirchne@thoughtworks.com"
+  site: "https://github.com/jeankirchner"
+  avatar: "https://avatars0.githubusercontent.com/u/576918?v=2&s=460"
+alvarocavalcanti: 
+  name: "Alvaro Cavalcanti"
+  email: "acavalca@thoughtworks.com"
+  site: "https://github.com/alvarocavalcanti"
+  avatar: "https://avatars2.githubusercontent.com/u/512234?v=2&s=460"
+tassiaspinelli:
+  name: "Tassia Spinelli"
+  email: "tspinell@thoughtworks.com"
+  site: "https://www.linkedin.com/in/tassiaspinelli"
+  avatar: "http://tassiaspinelli.com/wp-content/uploads/2010/09/tassiaportrait.jpg"
+alfredosegundo:
+  name: "Alfredo Segundo"
+  email: "asegundo@thoughtworks.com"
+  site: "https://github.com/alfredosegundo"
+  avatar: "https://avatars3.githubusercontent.com/u/240526?v=2&s=460" 
 
 
 

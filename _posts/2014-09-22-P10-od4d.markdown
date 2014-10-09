@@ -1,0 +1,48 @@
+---
+layout: project
+title:  "Plataforma Semântica OD4D"
+subtitle: "Um experimento sobre dados, com dados linkados!"
+date:   2014-09-14
+categories: experiment
+description: "A Nova plataforma OD4D é uma suíte de softwares feitos para criar uma rede pessoas e instituições dedicados ao tema: dados abertos para o desenvolvimento completamente linkada e semântica!"
+authors: [yaso_cordova", "rafael_magrin", "jean_kirchner", "alvarocavalcanti", "tassiaspinelli", "alfredosegundo"]
+technologies: "Ruby, XML, Rails, PostgreSQL, RDF, Turtle"
+authors_tolltip: "Yaso </br> Alfredo Segundo <br> Tássia Spinelli </br> Alvaro Cavalcanti <br> Jean Kichner <br> Rafael Magrin <br> Caroline Burle"
+github: https://github.com/W3CBrasil/OD4D
+final_version: http://platform.od4d.net
+status: Lançado em 02/10/2014
+thumb: "10_od4d_thumb.png"
+background: "10_od4d.png"
+---
+
+##Contextualização
+
+O projeto OD4D é uma iniciativa do escritório do [W3C no Brasil](http://www.w3c.br/Home/WebHome) em parceria com a Comissão Econômica para a América Latina e o Caribe [(CEPAL)](http://www.cepal.org/) e financiado pelo [IDRC](http://www.idrc.ca/). Tem como um de seus propósitos promover uma comunidade de gestores de políticas públicas, oficiais de governo e pesquisadores na região da América Latina e Caribe, conscientizando-a sobre o potencial dos dados abertos e sobre estratégias adequadas para implementações de sucesso. 
+
+O projeto [Dados Abertos para o Desenvolvimento (OD4D)](http://platform.od4d.org/) tem como objetivo contribuir para o desenvolvimento de estratégias em dados abertos que levem à transparência governamental, serviços inovadores e à efetividade de políticas públicas em setores importantes da indústria, fomentando uma economia de conhecimento mais inclusiva na região da América Latina e países em desenvolvimento. Para alcançar essa meta, a idéia é investigar as potencialidades dos dados abertos nas políticas públicas em três eixos: transparência, novos serviços e desenvolvimento equitativo. 
+
+Está em início uma nova etapa do projeto que prevê iniciativas como uma reformulação do portal OD4D, desenvolvida por parceiros da Thoughtworks. O novo portal tem como proposta transformar o projeto OD4D em uma referência em plataforma de dados abertos que possibilite o aprendizado da tecnologia, a troca de informações pela comunidade e a produção de conteúdo semântico. 
+
+Assim, a plataforma servirá de hub para investidores, governos, instituições e indivíduos que tenham intenção de trabalhar juntos na criação colaborativa de uma rede ao redor do tema Dados Abertos na América Latina, África, Ásia e Caribe. 
+
+O desenvolvimento do portal foi finalizado em outubro de 2014, e a ideia é que a própria plataforma seja um case por si só de dados abertos. Para tal, a plataforma oferece um ambiente no qual as pessoas podem publicar informações e também se informar a respeito de dados abertos e temas correlatos. O sistema consiste em três módulos principais: o publicador, o parser e o armazenador. O módulo publicador facilita a inserção de novas informações alimentando a plataforma. O parser processa canais RSS de parceiros e extrai triplas semânticas sobre esse conteúdo. Finalmente, o armazenador guarda as triplas RDF encontradas utilizando a sintaxe [Turtle](http://www.w3.org/TR/turtle/) com a ajuda da suíte [Jena](https://jena.apache.org/). 
+
+Também é oferecido um end-point de consulta semântica para que os usuários possam acessar essas informações provenientes do repositório de triplas coletadas. Por fim, toda essa plataforma está disponível no [Github](https://github.com/W3CBrasil/OD4D) para qualquer pessoa que queira construir um site ou plataforma semânticos sobre algum outro domínio. 
+
+Em sua primeira fase de implementação, de 2011 a 2013, foram produzidas várias ações e produtos, como: o Tool Kit de Curso de Dados Abertos, licenciado em Creative Commons; o mapeamento das principais iniciativas para a divulgação de dados econômicos, sociais e ambientais estruturadas na América Latina e no Caribe; a produção de cinco artigos inovadores sobre Dados Abertos; o concurso de softwares com uso de dados abertos (De Olho nas Emendas; Adote um pedido; [Retrato da Violência](http://retratodaviolencia.org/RS/#soledade); Multas Sociais; [Proprietários do Brasil](http://proprietariosdobrasil.org.br/); [Reputação S/A](http://reputacao-sa.org/); [Samambaia DF](http://samambaiadf.net/); Polidatos Uruguai); o site [Mapa da Cultura](https://mapadacultura.org/); a Conferência Regional para América Latina e o Caribe e dois vídeos: Datos Abiertos Gubernamentales y el Proyecto OD4D e Dados Abertos para Um Dia a Dia Melhor. 
+
+##Desafios Envolvidos
+
+Para Tassia Spinelli, especialista em experience design da Thoughtworks, as principais dificuldades técnicas enfrentadas no desenvolvimento da nova plataforma OD4D têm sido aprender sobre [Linked Data](http://www.w3.org/standards/semanticweb/data) e [Web Semântica](http://www.w3c.br/Padroes/WebSemantica), principalmente descobrir as suas aplicações práticas. Os próximos desafios para a finalização do projeto são: fazer a importação dos dados do site antigo para a nova plataforma, relacionando esses dados de forma semântica e integrada com a nova arquitetura de informação e experiência de uso; criar a mecânica de envolvimento dos parceiros e colaboradores na produção de conteúdo e em seguida divulgar e criar parcerias com organizações que queiram se conectar com a plataforma.
+
+Já para líder do projeto no W3C Brasil, Yasodara Córdova, o principal desafio é encontrar uma maneira de transformar o uso das principais recomendações relacionadas à Web Semântica, como o RDF, em benefícios que o usuário possa perceber através do uso da plataforma. "O usuário não enxerga se você está usando o modelo [RDF](http://www.w3.org/RDF/) para representar os metadados ou se está listando em um [csv](http://www.w3.org/2013/csvw/wiki/Main_Page). Quando o uso de tecnologias baseadas no modelo RDF saltar aos olhos dos usuários comuns vai ser a hora em que a Web Semântica vai pegar pra valer". 
+
+##Linguagens e tecnologias utilizadas
+
+O sistema foi construído com recursos de [Web Semântica](http://www.w3c.br/Padroes/WebSemantica) e [Linked Data](http://www.w3.org/standards/semanticweb/data). Para auxiliar na criação da aplicação web, foi utilizado o framework Ruby on Rails. O CMS é baseado em ruby tambem, seu nome é [CaseIN](http://www.rubyonrails.com.br/). Já o tratamento de triplas RDF em sintaxe [Turtle](http://www.w3.org/TR/turtle/) e o seu interfaceamento com um servidor HTTP foram implementados utilizando as tecnologias [Jena e Fuseki](http://www.w3.org/2001/sw/wiki/Jena). 
+
+Já no frontend, foram utilizados [HTML](http://dev.w3.org/html5/html-author/), [CSS](http://www.w3.org/Style/CSS/Overview.en.html) e [JavaScript](http://www.crockford.com/javascript/javascript.html). 
+
+
+
+
