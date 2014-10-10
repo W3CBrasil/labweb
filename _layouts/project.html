@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
   {% include head.html %}
 
@@ -9,7 +9,7 @@
     <div class="project-infos">
       <h1 class="title">{{ page.title }}</h1>
       <p class="subtitle">{{ page.subtitle }}</p>
-      <img src="/images/projects/backgrounds/{{ page.background }}" class="project-image">
+      <img src="/images/projects/backgrounds/{{ page.background }}" alt="{{ page.title }}" class="project-image">
     </div>
     <section class="container">
       <div class="content project-details">
@@ -69,11 +69,11 @@
           </li>
         </ul>
 
-        <h2 class="title-authors">Autores:</h1>
+        <h2 id="authors" class="title-authors">Autores:</h1>
         <ul class="project-list-info">
           {% for author in page.authors %}
             <li class="info authors">
-              <img src="{{ site.data.authors[author].avatar }}" class="project-image">
+              <img src="{{ site.data.authors[author].avatar }}" alt="{{ site.data.authors[author].name }}" class="project-image">
               <div class="type">
                 <h3>{{ site.data.authors[author].name }}</h3>
                 <p><small>
