@@ -26,10 +26,12 @@
 
       .title {
         @include span-columns(6 of 6);
+        @include omega;
         display: block;
         font-size: 26px;
         color: $black;
         margin: 10px 0;
+        padding-right: 10px;
         font-family: 'AdventProRegular';
       }
 
@@ -39,8 +41,11 @@
       }
 
       p {
+        @include span-columns(6 of 6);
+        @include omega;
+        display: block;
         font-family: 'LatoRegular';
-        margin-top: 20px;
+        padding-right: 10px;
         font-size: 12px;
         line-height: 18px;
       }
@@ -184,17 +189,6 @@
           display: none;
         }
       }
-
-      // @include media($bp-600) {
-      //   .project-description,
-      //   .project-image {
-      //     @include span-columns(6 of 12);
-      //   }
-
-      //   .project-description {
-      //     margin-right: 0;
-      //   }
-      // }
     }
   }
 
