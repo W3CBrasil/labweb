@@ -6,7 +6,6 @@
       <li class="{% if modulus_see_more == "0" %}omega{% endif %}">
         <h3 class="title"><a class="title" href="{{post.url | prepend: site.baseurl}}">{{ post.title }}</a></h3>
         {{ post.description | markdownify }}
-        <a href="{{ post.url }}">[...]</a>
       </li>
     {% endfor %}
   </ul>
