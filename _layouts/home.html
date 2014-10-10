@@ -11,11 +11,11 @@
       <div class="container">
         <div class="highlight-controls">
           <div class="highlight-arrow" data-navigation="prev">
-            <img src="/images/arrow-left.png">
+            <img src="/images/arrow-left.png" alt="Esquerda">
           </div>
 
           <div class="highlight-arrow" data-navigation="next">
-            <img src="/images/arrow-right.png">
+            <img src="/images/arrow-right.png" alt="Direita">
           </div>
         </div>
 
@@ -26,7 +26,7 @@
                 <div class="highlight-title">
                   <a href="{{ post.url }}">
                     {{ post.title }}
-                    <img class="highlight-image" src="{% category_icon post.categories.first, blue %}">
+                    <img class="highlight-image" src="{% category_icon post.categories.first, blue %}" alt="{{ site.data.categories[post.categories.first] }}">
                   </a>
                 </div>
 
