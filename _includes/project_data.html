@@ -16,9 +16,15 @@
     </div>
     <div class="project-icons">
       <ul>
-        <li class="code tooltip" title="{{ include.post.technologies | markdownify }}"></li>
-        <li class="author tooltip" title="{{ include.post.authors_tolltip | markdownify }}"></li>
-        <li class="github tooltip" title="<a href='{{ include.post.github }}' target=_blank>acesse o github</a>"></li>
+        <li class="tooltip" title="{{ include.post.technologies | markdownify }}">
+          <img src="/images/projects/code-icons/code.png" alt="Tecnologias">
+        </li>
+        <li class="tooltip" title="{{ include.post.authors_tolltip | markdownify }}">
+          <img src="/images/projects/code-icons/authors.png" alt="Autores">
+        </li>
+        <li class="tooltip" title="<a href='{{ include.post.github }}' target=_blank>acesse o github</a>">
+          <img src="/images/projects/code-icons/github.png" alt="Github">
+        </li>
       </ul>
     </div>
   </div>
