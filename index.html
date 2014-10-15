@@ -3,10 +3,10 @@ layout: home
 ---
 
 <section class="content home">
-  <header>
+  <div class="home-content-header">
     <h2>Mais Projetos</h2>
     {% include listing-mode.html %}
-  </header>
+  </div>
 
   <div class="posts" data-projects-wrapper>
     {% for post in site.posts limit: 10 %}
