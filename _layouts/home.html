@@ -7,15 +7,15 @@
 
     {% include header.html %}
 
-    <section class="highlights">
+    <section role="banner" class="highlights">
       <div class="container">
         <div class="highlight-controls">
           <div class="highlight-arrow" data-navigation="prev">
-            <img src="/images/arrow-left.png" alt="Esquerda">
+            <img src="/images/arrow-left.png" alt=" " title="Anterior">
           </div>
 
           <div class="highlight-arrow" data-navigation="next">
-            <img src="/images/arrow-right.png" alt="Direita">
+            <img src="/images/arrow-right.png" alt=" " title="Próximo">
           </div>
         </div>
 
@@ -40,7 +40,7 @@
       </div>
     </section>
 
-    <section class="container">
+    <section role="main" class="container">
       {{ content }}
     </section>
 

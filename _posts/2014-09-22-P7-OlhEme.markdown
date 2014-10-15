@@ -5,7 +5,7 @@ subtitle: "Uma plataforma para acompanhamento das emendas legislativas"
 date:   2014-09-10 17:49:49
 categories: app
 description: "Com esse projeto o cidadão pode verificar quais obras ou serviços estão sendo entregues em sua vizinhança durante o ano."
-authors: ["denis_moura", "diego_ramalho", "felipe_permino", "leonardo_oliveira", "decko", "derushi_farias", "ricardo_poppi", "kai_mishima", "luis_silva", "marc_arnoldi"]
+authors: ["denis_moura", "diego_ramalho", "felipe_permino", "leonardo_oliveira", "andre_decko", "derushi_farias", "ricardo_poppi", "kai_mishima", "luis_silva", "marc_arnoldi"]
 technologies: "MySQL, Qgis, JSON, Chroma.js, API do Google Maps, Require.js, Knockout"
 authors_tolltip: "Denis Moura <br> Diego Ramalho <br> Felipe Permino <br> Leonardo Oliveira <br> André Filipe <br> Derushi Farias <br>	Ricardo Poppi <br> Kai Mishima <br> Luiz Carlos Silva <br> Marc Arnoldi"
 github: https://github.com/ThackdayDF/EmendasDF/

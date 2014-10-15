@@ -24,6 +24,7 @@
     height: 47px;
     margin: 0px 1px 1px 20px;
     background-color: $white;
+    cursor: pointer;
 
     img {
       margin-top: 10px;
@@ -74,10 +75,10 @@
   &.home {
     margin-top: 120px;
 
-    header {
+    .home-content-header {
       position: relative;
 
-      h2 {
+      h1 {
         @include span-columns(8);
         font-weight: 300;
         font-size: 56px;
@@ -86,7 +87,7 @@
       }
 
       @include media($mobile) {
-        h2 {
+        h1 {
           @include span-columns(12);
           font-family: 'AdventProLight';
           font-size: 60px;
