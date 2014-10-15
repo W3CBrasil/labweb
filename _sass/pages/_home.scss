@@ -78,7 +78,7 @@
     .home-content-header {
       position: relative;
 
-      h2 {
+      h1 {
         @include span-columns(8);
         font-weight: 300;
         font-size: 56px;
@@ -87,7 +87,7 @@
       }
 
       @include media($mobile) {
-        h2 {
+        h1 {
           @include span-columns(12);
           font-family: 'AdventProLight';
           font-size: 60px;

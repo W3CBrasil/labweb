@@ -5,7 +5,9 @@
     <img src="/images/projects/thumbs/project-default.png" alt=" " class="project-image">
   {% endif %}
   <div class="project-description">
-    <a class="title" href="{{include.post.url | prepend: site.baseurl}}">{{ include.post.title }}</a>
+    <h2>
+      <a class="title" href="{{include.post.url | prepend: site.baseurl}}">{{ include.post.title }}</a>
+    </h2>
     {{ include.post.description | markdownify }}
   </div>
 
