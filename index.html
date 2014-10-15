@@ -8,7 +8,7 @@ layout: home
     {% include listing-mode.html %}
   </div>
 
-  <div class="posts" data-projects-wrapper>
+  <div id="posts" class="posts" data-projects-wrapper aria-live="polite">
     {% for post in site.posts limit: 10 %}
       {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
       {% include project_data.html post=post %}

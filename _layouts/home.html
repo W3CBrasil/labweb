@@ -10,16 +10,16 @@
     <section role="banner" class="highlights">
       <div class="container">
         <div class="highlight-controls">
-          <div class="highlight-arrow" data-navigation="prev">
+          <div class="highlight-arrow" data-navigation="prev" aria-controls="banner">
             <img src="/images/arrow-left.png" alt=" " title="Anterior">
           </div>
 
-          <div class="highlight-arrow" data-navigation="next">
+          <div class="highlight-arrow" data-navigation="next" aria-controls="banner">
             <img src="/images/arrow-right.png" alt=" " title="Próximo">
           </div>
         </div>
 
-        <div class="banner">
+        <div id="banner" class="banner" aria-live="polite">
           <ul>
             {% for post in site.posts limit: 4 %}
               <li>
