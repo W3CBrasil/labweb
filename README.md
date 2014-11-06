@@ -56,7 +56,7 @@ Com o arquivo do projeto criado, é necessário definir quais são as suas propr
 * **final_version**: https://www.google.com _(endereço da versão final do projeto)_
 * **status**: Lançado em 08/05/2014 _(status do projeto)_
 * **raw_data**: http://dados.rs.gov.br/ _(endereço dos dados utilizados pelo projeto)
-* **background**: "bg-highlight.png" _(imagem de background que é exibida na página do projeto. a imagem deve ficar em '/images/projects/backgrounds/bg-highlight.png')
+* **background**: "bg-highlight.jpg" _(imagem de background que é exibida na página do projeto. a imagem deve ficar em '/images/projects/backgrounds/bg-highlight.jpg')
 _
 
 Estas variáveis precisam ser definidas dentro do escopo do [Front Matter](http://jekyllrb.com/docs/frontmatter/), no cabeçalho do arquivo de projeto:
@@ -85,7 +85,7 @@ github: https://www.github.com/codeminer42
 final_version: https://www.google.com
 status: Lançado em 08/05/2014
 raw_data: http://dados.rs.gov.br/
-background: "bg-highlight.png"
+background: "bg-highlight.jpg"
 ---
 
 ## Projecto Exemplo
