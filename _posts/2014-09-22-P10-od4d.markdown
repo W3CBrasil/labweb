@@ -5,7 +5,7 @@ subtitle: "Um experimento sobre dados, com dados linkados!"
 date:   2014-09-14
 categories: experiment
 description: "A Nova plataforma OD4D é uma suíte de softwares feitos para criar uma rede pessoas e instituições dedicados ao tema: dados abertos para o desenvolvimento completamente linkada e semântica!"
-authors: ["yaso_cordova", "rafael_magrin", "jean_kirchner", "alvarocavalcanti", "tassiaspinelli", "alfredosegundo"]
+authors: [yaso_cordova", "rafael_magrin", "jean_kirchner", "alvarocavalcanti", "tassiaspinelli", "alfredosegundo"]
 technologies: "Ruby, XML, Rails, PostgreSQL, RDF, Turtle"
 authors_tolltip: "Yaso </br> Alfredo Segundo <br> Tássia Spinelli </br> Alvaro Cavalcanti <br> Jean Kichner <br> Rafael Magrin <br> Caroline Burle"
 github: https://github.com/W3CBrasil/OD4D
