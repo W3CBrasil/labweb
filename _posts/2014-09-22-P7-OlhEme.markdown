@@ -12,6 +12,7 @@ github: https://github.com/ThackdayDF/EmendasDF/
 final_version: https://emendas.crowdmap.com/
 status: Lançado em 08/05/2012
 raw_data: http://www.cl.df.gov.br/dcl2011
+thumb: "7_one_thumb.png"
 background: "7_Olho_emendas_1022x606.png"
 ---
 
