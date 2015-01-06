@@ -1,0 +1,17 @@
+---
+layout: home
+---
+
+<section class="content home">
+  <div class="home-content-header">
+    <h1>Mais Projetos</h1>
+    {% include listing-mode.html %}
+  </div>
+
+  <div id="posts" class="posts" data-projects-wrapper aria-live="polite">
+    {% for post in site.posts limit: 10 %}
+      {% capture modulus %}{{ forloop.index | mod:2 }}{% endcapture %}
+      {% include project_data.html post=post %}
+    {% endfor %}
+  </div>
+</section>
