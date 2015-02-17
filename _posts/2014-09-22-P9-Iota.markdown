@@ -11,7 +11,7 @@ authors_tolltip: "Thiago Rondon"
 github: https://github.com/AwareTI/Iota/
 final_version: http://www.cidadessustentaveis.org.br/
 status: Lançado em 08/05/2012
-background: "8_iota.png"
+background: "9_iota_1022x606.jpg"
 ---
 
 ##Contextualização
