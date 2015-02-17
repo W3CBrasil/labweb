@@ -1,4 +1,4 @@
-# Labweb (CeWeb.br) 
+# Labweb (CeWeb.br)
 
 Descrição do site (...)
 
@@ -8,19 +8,19 @@ Descrição do site (...)
 * Git
 * Bundler
 
-O W3C-LabWeb utiliza a ferramenta [Jekyll](http://jekyllrb.com/) para gerar conteúdo estático. O Jekyll é uma [rubygem](https://rubygems.org/gems/jekyll) e sua instalação necessita que o [Ruby](https://www.ruby-lang.org/en/) esteja instalado e configurado na máquina local. Também é utilizado o [Bundler](http://bundler.io/) para gerenciar as dependência do Ruby. O [Git](http://git-scm.com/) é utilizado para clonar o projeto na máquina local.
+O W3C-LabWeb utiliza a ferramenta [Jekyll](http://jekyllrb.com/) para gerar conteúdo estático. O Jekyll é uma [rubygem](https://rubygems.org/gems/jekyll) e sua instalação necessita que o [Ruby](https://www.ruby-lang.org/en/) esteja instalado e configurado na máquina local. Também é utilizado o [Bundler](http://bundler.io/) para gerenciar as dependências do Ruby. O [Git](http://git-scm.com/) é utilizado para clonar o projeto na máquina local e para o deploy.
 
 ### Instalação
 
 Com as ferramentas instaladas, faça o clone do projeto:
 ```bash
-$ git clone https://github.com/Codeminer42/W3C-LabWeb.git
+$ git clone https://github.com/W3CBrasil/labweb.git
 ```
 
-Acesse a pasta do clone (W3C-LabWeb caso você tenha usado o comando acima) e rode o comando `bundle` para instalar as dependências:
+Acesse a pasta do clone (labweb caso você tenha usado o comando acima) e rode o comando `bundle` para instalar as dependências:
 
 ```bash
-$ cd W3C-LabWeb
+$ cd labweb
 $ bundle
 ```
 
@@ -52,12 +52,11 @@ Com o arquivo do projeto criado, é necessário definir quais são as suas propr
 * **thumb**: projecto-exemplo.png _(imagem da listagem do projeto, o sistema irá procurar uma imagem com este nome dentro de images/project-thumbs/)_
 * **technologies**: Ruby, Rails, Javascript _(tecnologias utilizadas no projeto)_
 * **authors_tolltip**: Kent \<br> Martin \<br> Robert _(nome dos autores que serão exibidos quando o mouse passar por cima do ícone de autores na listagem, separar os autores com a tag \<br> para quebra de linha)_
-* **github**: https://www.github.com/codeminer42 _(endereço github do projeto)_
+* **github**: https://www.github.com/W3CBrasil/labweb _(endereço github do projeto)_
 * **final_version**: https://www.google.com _(endereço da versão final do projeto)_
 * **status**: Lançado em 08/05/2014 _(status do projeto)_
-* **raw_data**: http://dados.rs.gov.br/ _(endereço dos dados utilizados pelo projeto)
-* **background**: "bg-highlight.jpg" _(imagem de background que é exibida na página do projeto. a imagem deve ficar em '/images/projects/backgrounds/bg-highlight.jpg')
-_
+* **raw_data**: http://dados.rs.gov.br/ _(endereço dos dados utilizados pelo projeto)_
+* **background**: "bg-highlight.jpg" _(imagem de background que é exibida na página do projeto. a imagem deve ficar em '/images/projects/backgrounds/bg-highlight.jpg')_
 
 Estas variáveis precisam ser definidas dentro do escopo do [Front Matter](http://jekyllrb.com/docs/frontmatter/), no cabeçalho do arquivo de projeto:
 
@@ -81,7 +80,7 @@ authors: ["lionelmessi", "cristianoronaldo", "frankribery"]
 thumb: project-1.png
 technologies: Ruby, Rails, Javascript
 authors_tolltip: Kent <br> Martin <br> Robert
-github: https://www.github.com/codeminer42
+github: https://www.github.com/W3CBrasil/labweb
 final_version: https://www.google.com
 status: Lançado em 08/05/2014
 raw_data: http://dados.rs.gov.br/
